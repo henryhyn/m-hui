@@ -3,14 +3,28 @@ import classNames from 'classnames';
 import { Grid } from '../../index';
 
 class Grids extends Component {
+    renderData(data) {
+        return data.map((item, i)=> {
+            return <Grid key={i}/>;
+        });
+    }
+
     render() {
+        const { data, children } = this.props;
         return (
-            <Grid/>
+            <div>
+                {data.length > 0 ? this.renderData(data) : children}
+            </div>
         );
     }
 }
 
-Grids.propTypes = {};
-Grids.defaultProps = {};
+Grids.propTypes = {
+    data: PropTypes.array
+};
+
+Grids.defaultProps = {
+    data: []
+};
 
 export default Grids;
