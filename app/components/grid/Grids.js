@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
+import { Grid } from '../../index';
 
 class Grids extends Component {
     render() {
         return (
-            <div>Grids</div>
+            <Grid/>
         );
     }
 }
