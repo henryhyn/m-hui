@@ -13,7 +13,7 @@ module.exports = {
     // 入口. 让 webpack 用哪个文件作为项目的入口
     // 可以直接用文件夹名称, 默认会找 index.js, 也可以确定是哪个文件名字
     entry: {
-        app: './app/index.js'
+        app: './app/app.js'
     },
     // 出口. 让 webpack 把处理完成的文件放在哪里
     // 用一个数组 [name] 来代替, 它会根据 entry 的入口文件名称生成多个 js 文件
