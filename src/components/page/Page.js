@@ -37,8 +37,8 @@ Page.propTypes = {
 };
 
 Page.defaultProps = {
-    title: false,
-    subTitle: false,
+    title: '',
+    subTitle: '',
     spacing: false
 };
 

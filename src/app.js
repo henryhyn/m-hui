@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import Home from './pages/home/Home';
 import Button from './pages/button/ButtonDemo';
+import Icon from './pages/icon/IconDemo';
 
 class App extends Component {
     render() {
@@ -19,6 +20,7 @@ ReactDOM.render((
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
             <Route path="button" component={Button}/>
+            <Route path="icons" component={Icon}/>
         </Route>
     </Router>
 ), document.getElementById('container'));

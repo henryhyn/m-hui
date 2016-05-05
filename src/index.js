@@ -6,6 +6,7 @@ import GridIcon from './components/grid/GridIcon';
 import GridLabel from './components/grid/GridLabel';
 import Button from './components/button/Button';
 import ButtonArea from './components/button/ButtonArea';
+import Icon from './components/icon/Icon';
 
 export {
     Page
@@ -15,4 +16,5 @@ export {
     , GridLabel
     , Button
     , ButtonArea
+    , Icon
 };
