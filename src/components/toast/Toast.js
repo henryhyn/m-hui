@@ -11,9 +11,12 @@ class Toast extends Component {
 
     render() {
         const { className, show, icon, iconSize, children } = this.props;
+        const cls = classNames({
+            'hui-loading-toast': icon === 'loading'
+        }, className);
 
         return (
-            <div style={{display: show ? 'block' : 'none'}}>
+            <div className={cls} style={{display: show ? 'block' : 'none'}}>
                 <Mask transparent/>
 
                 <div className="hui-toast">
