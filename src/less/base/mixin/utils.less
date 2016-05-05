@@ -1,6 +1,8 @@
 // 圆角
-.radius(@radius) {
+.border-radius(@radius) {
   border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
 }
 
 // 尺寸
@@ -15,6 +17,6 @@
 
 // 画圆
 .circle(@diameter) {
-  .radius(@diameter/2);
+  .border-radius(@diameter/2);
   .size(@diameter);
 }
