@@ -5,7 +5,7 @@ import { Grid } from '../../index';
 class Grids extends Component {
     renderData(data) {
         return data.map((item, i)=> {
-            return <Grid key={i}/>;
+            return <Grid key={i} icon={item.icon} label={item.label} {...item}/>;
         });
     }
 

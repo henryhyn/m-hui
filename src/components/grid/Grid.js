@@ -4,16 +4,25 @@ import { GridIcon, GridLabel } from '../../index';
 
 class Grid extends Component {
     render() {
+        const { icon, label, children } = this.props;
         return (
-            <div>
-                <GridIcon/>
-                <GridLabel/>
-            </div>
+            <a {...this.props}>
+                {icon ? <GridIcon>{icon}</GridIcon> : false}
+                {children}
+                {label ? <GridLabel>{label}</GridLabel> : false}
+            </a>
         );
     }
 }
 
-Grid.propTypes = {};
-Grid.defaultProps = {};
+Grid.propTypes = {
+    icon: PropTypes.any,
+    label: PropTypes.string
+};
+
+Grid.defaultProps = {
+    icon: false,
+    label: ''
+};
 
 export default Grid;

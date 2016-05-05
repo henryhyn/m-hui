@@ -3,8 +3,9 @@ import classNames from 'classnames';
 
 class GridLabel extends Component {
     render() {
+        const { children } = this.props;
         return (
-            <div>Label</div>
+            <div>{children}</div>
         );
     }
 }

@@ -3,8 +3,9 @@ import classNames from 'classnames';
 
 class GridIcon extends Component {
     render() {
+        const { children } = this.props;
         return (
-            <div>Icon</div>
+            <div>{children}</div>
         );
     }
 }
