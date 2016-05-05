@@ -10,7 +10,7 @@ class IconDemo extends Component {
 
     render() {
         return (
-            <Page title='图标'>
+            <Page spacing title='图标'>
                 <Icon size='large' value='cancel'/>
                 <Icon size='large' value='circle'/>
                 <Icon size='large' value='clear'/>

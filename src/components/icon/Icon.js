@@ -2,6 +2,11 @@ require('./hui_icon_font.less');
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * 图标
+ * @param {string} value - 图标类型, 可选 success, 默认 success
+ * @param {string} size - 大小, 可选 small, large, 默认 small
+ */
 class Icon extends Component {
     constructor(props) {
         super(props);
@@ -21,8 +26,14 @@ class Icon extends Component {
     }
 }
 
-Icon.propTypes = {};
+Icon.propTypes = {
+    value: PropTypes.string,
+    size: PropTypes.string
+};
 
-Icon.defaultProps = {};
+Icon.defaultProps = {
+    value: 'success',
+    size: 'small'
+};
 
 export default Icon;
