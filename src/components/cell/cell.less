@@ -1,0 +1,85 @@
+@import "../../less/base/fn";
+
+@huiCellBg: #FFFFFF;
+@huiCellBorderColor: #D9D9D9;
+@huiCellGapV: 10px;
+@huiCellGapH: 15px;
+@huiCellInnerGapH: .35em;
+@huiCellHeight: 44px;
+@huiCellFontSize: 17px;
+@huiCellTipsFontSize: 14px;
+
+@huiCellLineHeight: unit((@huiCellHeight - 2 * @huiCellGapV) / @huiCellFontSize);
+// 高度为44px，减去上下padding的行高
+@huiCellsMarginTop: unit(20 / @huiCellFontSize, em);
+
+.hui-cells {
+  margin-top: @huiCellsMarginTop;
+  background-color: @huiCellBg;
+  line-height: @huiCellLineHeight;
+  font-size: @huiCellFontSize; //cell中间有效高度23px，跟客户端默认图标尺寸一致
+
+  overflow: hidden; //因为每个cell的border使用before元素left搞的，ie下伪元素的containing block估计跟标准不同，在cell上用oh不生效
+
+  // onepx
+  position: relative;
+  &:before {
+    .setTopLine(@huiCellBorderColor);
+  }
+  &:after {
+    .setBottomLine(@huiCellBorderColor);
+  }
+}
+
+.hui-cells-title {
+  margin-top: .77em; // 15px - 行高
+  margin-bottom: .3em; // 8px - 行高
+  padding-left: @huiCellGapH;
+  padding-right: @huiCellGapH;
+  color: @globalTextColor;
+  font-size: @huiCellTipsFontSize;
+
+  & + .hui-cells {
+    margin-top: 0;
+  }
+}
+
+.hui-cells-tips {
+  margin-top: .3em; // 8px - 行高
+  color: @globalTextColor;
+  padding-left: @huiCellGapH;
+  padding-right: @huiCellGapH;
+  font-size: @huiCellTipsFontSize;
+}
+
+.hui-cell {
+  padding: @huiCellGapV @huiCellGapH;
+  display: flex;
+  align-items: center;
+  // onepx
+  position: relative;
+  &:before {
+    .setTopLine(@huiCellBorderColor);
+    left: @huiCellGapH;
+  }
+  &:first-child {
+    &:before {
+      display: none;
+    }
+  }
+
+  .hui-cell-hd {
+
+  }
+
+  .hui-cell-bd {
+    &.hui-cell-primary {
+      flex: 1;
+    }
+  }
+
+  .hui-cell-ft {
+    text-align: right;
+    color: @globalTextColor;
+  }
+}

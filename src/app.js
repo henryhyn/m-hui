@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import Button from './pages/button/ButtonDemo';
 import Icon from './pages/icon/IconDemo';
 import Toast from './pages/toast/ToastDemo';
+import Cell from './pages/cell/CellDemo';
 
 class App extends Component {
     render() {
@@ -23,6 +24,7 @@ ReactDOM.render((
             <Route path="button" component={Button}/>
             <Route path="icons" component={Icon}/>
             <Route path="toast" component={Toast}/>
+            <Route path="cell" component={Cell}/>
         </Route>
     </Router>
 ), document.getElementById('container'));

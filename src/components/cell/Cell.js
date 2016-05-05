@@ -1,3 +1,4 @@
+require('./cell.less');
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
@@ -8,8 +9,14 @@ class Cell extends Component {
     }
 
     render() {
+        const { className, children } = this.props;
+        const Tag = this.props.href ? 'a' : this.props.htmlFor ? 'label' : 'div';
+        const cls = classNames({
+            'hui-cell': true
+        }, className);
+
         return (
-            <div />
+            <Tag className={cls} {...this.props}>{children}</Tag>
         );
     }
 }

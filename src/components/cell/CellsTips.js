@@ -8,8 +8,13 @@ class CellsTips extends Component {
     }
 
     render() {
+        const { className, children } = this.props;
+        const cls = classNames({
+            'hui-cells-tips': true
+        }, className);
+
         return (
-            <div />
+            <div className={cls} {...this.props}>{children}</div>
         );
     }
 }

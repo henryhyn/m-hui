@@ -8,8 +8,13 @@ class CellFooter extends Component {
     }
 
     render() {
+        const { className, children } = this.props;
+        const cls = classNames({
+            'hui-cell-ft': true
+        }, className);
+
         return (
-            <div />
+            <div className={cls} {...this.props}>{children}</div>
         );
     }
 }

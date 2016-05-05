@@ -9,6 +9,13 @@ import ButtonArea from './components/button/ButtonArea';
 import Icon from './components/icon/Icon';
 import Toast from './components/toast/Toast';
 import Mask from './components/mask/Mask';
+import Cell from './components/cell/Cell';
+import CellHeader from './components/cell/CellHeader';
+import CellBody from './components/cell/CellBody';
+import CellFooter from './components/cell/CellFooter';
+import Cells from './components/cell/Cells';
+import CellsTitle from './components/cell/CellsTitle';
+import CellsTips from './components/cell/CellsTips';
 
 export {
     Page
@@ -21,4 +28,11 @@ export {
     , Icon
     , Toast
     , Mask
+    , Cell
+    , CellHeader
+    , CellBody
+    , CellFooter
+    , Cells
+    , CellsTitle
+    , CellsTips
 };

@@ -8,8 +8,13 @@ class CellsTitle extends Component {
     }
 
     render() {
+        const { className, children } = this.props;
+        const cls = classNames({
+            'hui-cells-title': true
+        }, className);
+
         return (
-            <div />
+            <div className={cls} {...this.props}>{children}</div>
         );
     }
 }
