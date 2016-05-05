@@ -1,14 +1,16 @@
 require('./less/style.less');
+import Page from './components/page/Page';
 import Grids from './components/grid/Grids';
 import Grid from './components/grid/Grid';
 import GridIcon from './components/grid/GridIcon';
 import GridLabel from './components/grid/GridLabel';
-import Page from './components/page/Page';
+import Button from './components/button/Button';
 
 export {
-    Grids
+    Page
+    , Grids
     , Grid
     , GridIcon
     , GridLabel
-    , Page
+    , Button
 };

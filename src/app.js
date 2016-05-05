@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import Home from './pages/home/Home';
+import Button from './pages/button/ButtonDemo';
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ ReactDOM.render((
     <Router history={browserHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
+            <Route path="button" component={Button}/>
         </Route>
     </Router>
 ), document.getElementById('container'));
