@@ -8,9 +8,10 @@ class Cells extends Component {
     }
 
     render() {
-        const { className, children } = this.props;
+        const { className, access, children } = this.props;
         const cls = classNames({
-            'hui-cells': true
+            'hui-cells': true,
+            'hui-cells-access': access
         }, className);
 
         return (
