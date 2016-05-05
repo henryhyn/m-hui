@@ -1,3 +1,36 @@
+@import "../../less/base/fn";
+
+@huiBtnDefaultGap: 15px;
+@huiBtnHeight: 42px;
+@huiBtnMiniHeight: 1.9;
+@huiBtnFontSize: 18px;
+@huiBtnFontColor: #FFFFFF;
+@huiBtnDisabledFontColor: rgba(255, 255, 255, .6);
+@huiBtnActiveFontColor: rgba(255, 255, 255, .4);
+@huiBtnMiniFontSize: 14px;
+@huiBtnBorderRadius: 5px;
+
+@huiBtnDefaultBg: #F7F7F7;
+@huiBtnDefaultActiveBg: #DEDEDE;
+@huiBtnDefaultFontColor: #454545;
+@huiBtnDefaultDisabledFontColor: #C9C9C9;
+@huiBtnDefaultActiveFontColor: #A1A1A1;
+
+@huiBtnPrimaryBg: #04BE02;
+@huiBtnPrimaryActiveBg: #039702;
+
+@huiBtnWarnBg: #EF4F4F;
+@huiBtnWarnActiveBg: #C13E3E;
+
+button.hui-btn {
+  border-width: 0;
+  width: 100%;
+}
+
 .hui-btn {
   display: block;
+  .hcenter();
+  .border-box();
+  .border-radius(@huiBtnBorderRadius);
+  .setTapColor();
 }
