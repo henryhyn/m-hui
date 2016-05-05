@@ -29,8 +29,83 @@ button.hui-btn {
 
 .hui-btn {
   display: block;
+  font-size: @huiBtnFontSize;
+  color: @huiBtnFontColor;
+  line-height: unit(@huiBtnHeight/@huiBtnFontSize);
   .hcenter();
   .border-box();
   .border-radius(@huiBtnBorderRadius);
   .setTapColor();
+}
+
+.hui-btn + .hui-btn {
+  margin-top: @huiBtnDefaultGap;
+}
+
+.hui-btn-primary {
+  background-color: @huiBtnPrimaryBg;
+  &:not(.hui-btn-disabled):visited {
+    color: @huiBtnFontColor;
+  }
+  &:not(.hui-btn-disabled):active {
+    color: @huiBtnActiveFontColor;
+    background-color: @huiBtnPrimaryActiveBg;
+  }
+}
+
+.hui-btn-default {
+  background-color: @huiBtnDefaultBg;
+  color: @huiBtnDefaultFontColor;
+  &:not(.hui-btn-disabled):visited {
+    color: @huiBtnDefaultFontColor;
+  }
+  &:not(.hui-btn-disabled):active {
+    color: @huiBtnDefaultActiveFontColor;
+    background-color: @huiBtnDefaultActiveBg;
+  }
+}
+
+.hui-btn-warn {
+  background-color: @huiBtnWarnBg;
+  &:not(.hui-btn-disabled):visited {
+    color: @huiBtnFontColor;
+  }
+  &:not(.hui-btn-disabled):active {
+    color: @huiBtnActiveFontColor;
+    background-color: @huiBtnWarnActiveBg;
+  }
+}
+
+.hui-btn-plain-primary {
+  color: @huiBtnPrimaryBg;
+  border: 1px solid @huiBtnPrimaryBg;
+  button&, input& {
+    border-width: 1px;
+    background-color: transparent;
+  }
+  &:active {
+    border-color: @huiBtnPrimaryActiveBg;
+  }
+  &:after {
+    border-width: 0;
+  }
+}
+
+.hui-btn-plain-default {
+  color: #5A5A5A;
+  border: 1px solid #5A5A5A;
+  button&, input& {
+    border-width: 1px;
+    background-color: transparent;
+  }
+  &:after {
+    border-width: 0;
+  }
+}
+
+.hui-btn-disabled {
+  color: @huiBtnDisabledFontColor;
+  &.hui-btn-default {
+    color: @huiBtnDefaultDisabledFontColor;
+  }
 }

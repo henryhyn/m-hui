@@ -11,8 +11,16 @@ class ButtonDemo extends Component {
     render() {
         return (
             <Page>
-                <Button/>
-                <Button href='http://www.baidu.com'/>
+                <Button>primary</Button>
+                <Button disabled>primary disabled</Button>
+                <Button type='default'>default</Button>
+                <Button type='default' disabled>default disabled</Button>
+                <Button type='warn'>warn</Button>
+                <Button type='warn' disabled>warn disabled</Button>
+                <Button plain>plain primary</Button>
+                <Button plain disabled>plain primary disabled</Button>
+                <Button plain type='default'>plain default</Button>
+                <Button plain type='default' disabled>plain default disabled</Button>
             </Page>
         );
     }

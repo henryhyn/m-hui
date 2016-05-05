@@ -1,3 +1,4 @@
+require('./page.less');
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
@@ -8,9 +9,13 @@ class Page extends Component {
     }
 
     render() {
-        const { children } = this.props;
+        const { className, children } = this.props;
+        const cls = classNames({
+            'hui-page': true
+        }, className);
+
         return (
-            <div>{children}</div>
+            <div className={cls} {...this.props}>{children}</div>
         );
     }
 }
