@@ -1,9 +1,20 @@
-.size(@size) {
-  width: @size;
-  height: @size;
+// 圆角
+.radius(@radius) {
+  border-radius: @radius;
 }
 
+// 尺寸
 .size(@width; @height) {
   width: @width;
   height: @height;
+}
+
+.size(@size) {
+  .size(@size, @size);
+}
+
+// 画圆
+.circle(@diameter) {
+  .radius(@diameter/2);
+  .size(@diameter);
 }

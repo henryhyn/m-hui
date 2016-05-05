@@ -1,0 +1,24 @@
+// 盒模型
+.border-box() {
+  box-sizing: border-box;
+}
+
+.flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inline-flex() {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.flex-direction(@value: row) {
+  -webkit-flex-direction: @value;
+  -moz-flex-direction: @value;
+  -ms-flex-direction: @value;
+  flex-direction: @value;
+}

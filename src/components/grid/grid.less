@@ -6,6 +6,7 @@
 
 .hui-grids {
   position: relative;
+  background-color: @foregroundColor;
   &:before {
     .setTopLine(@huiGridBorderColor);
   }
@@ -15,7 +16,7 @@
 
   .hui-grid {
     float: left;
-    box-sizing: border-box;
+    .border-box();
     padding: 20px 10px;
     width: 100% / @huiGridColumnCount;
 
