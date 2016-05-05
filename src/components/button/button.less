@@ -13,6 +13,8 @@
 button.hui-btn {
   border-width: 0;
   width: 100%;
+  outline: 0;
+  -webkit-appearance: none;
   &:focus {
     outline: 0;
   }
@@ -24,6 +26,7 @@ button.hui-btn {
   overflow: hidden;
   padding-left: 14px;
   padding-right: 14px;
+  text-decoration: none;
   font-size: @huiBtnFontSize;
   color: @huiBtnFontColor;
   line-height: unit(@huiBtnHeight/@huiBtnFontSize);
@@ -47,6 +50,7 @@ button.hui-btn {
   }
 
   &.hui-btn-small + &.hui-btn-small {
+    margin-top: auto;
     margin-left: @huiBtnDefaultGap;
   }
 
@@ -61,6 +65,22 @@ button.hui-btn {
 
 .hui-btn + .hui-btn {
   margin-top: @huiBtnDefaultGap;
+}
+
+.hui-btn-area {
+  margin: @huiBtnDefaultGap @huiBtnDefaultGap .3em;
+  &.hui-btn-area-inline {
+    display: flex;
+    .hui-btn {
+      margin-top: auto;
+      margin-right: @huiBtnDefaultGap;
+      width: 100%;
+      flex: 1;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 @import "button_primary";

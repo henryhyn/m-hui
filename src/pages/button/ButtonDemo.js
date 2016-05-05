@@ -13,10 +13,10 @@ class ButtonDemo extends Component {
             <Page>
                 <Button>按钮</Button>
                 <Button disabled>按钮</Button>
-                <Button type='default'>按钮</Button>
-                <Button type='default' disabled>按钮</Button>
                 <Button type='warn'>按钮</Button>
                 <Button type='warn' disabled>按钮</Button>
+                <Button type='default'>按钮</Button>
+                <Button type='default' disabled>按钮</Button>
 
                 <div className='hui-minipage'>
                     <Button plain>按钮</Button>
