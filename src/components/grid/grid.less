@@ -3,8 +3,10 @@
 @huiGridColumnCount: 3;
 @huiGridBorderColor: #D9D9D9;
 @huiGridIconSize: 50px;
+@huiGridFontSize: 14px;
 
 .hui-grids {
+  overflow: hidden;
   background-color: @foregroundColor;
   position: relative;
   &:before {
@@ -28,13 +30,29 @@
       .setBottomLine(@huiGridBorderColor);
     }
 
+    &:active {
+      background-color: @itemActiveColor;
+    }
+
     .hui-grid-icon {
       .hcenter();
       .size(@huiGridIconSize);
+
+      img {
+        display: block;
+        .size(100%);
+      }
+
+      & + .hui-grid-label {
+        margin-top: 5px;
+      }
     }
 
     .hui-grid-label {
+      display: block;
       .hcenter();
+      color: @globalTitleColor;
+      font-size: @huiGridFontSize;
     }
   }
 }
