@@ -20,9 +20,23 @@ class Icon extends Component {
             'hui-icon-msg': size === 'large'
         }, className);
 
-        return (
-            <i className={cls} {...this.props}/>
-        );
+        if (value === 'loading') {
+            return (
+                <div className="hui-loading">
+                    {
+                        [...Array(12)].map((x, i) => {
+                            return (
+                                <div key={i} className={`hui-loading-leaf hui-loading-leaf-${i}`}></div>
+                            );
+                        })
+                    }
+                </div>
+            );
+        } else {
+            return (
+                <i className={cls} {...this.props}/>
+            );
+        }
     }
 }
 

@@ -7,6 +7,8 @@ import GridLabel from './components/grid/GridLabel';
 import Button from './components/button/Button';
 import ButtonArea from './components/button/ButtonArea';
 import Icon from './components/icon/Icon';
+import Toast from './components/toast/Toast';
+import Mask from './components/mask/Mask';
 
 export {
     Page
@@ -17,4 +19,6 @@ export {
     , Button
     , ButtonArea
     , Icon
+    , Toast
+    , Mask
 };
