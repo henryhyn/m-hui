@@ -11,16 +11,20 @@ class ButtonDemo extends Component {
     render() {
         return (
             <Page>
-                <Button>primary</Button>
-                <Button disabled>primary disabled</Button>
-                <Button type='default'>default</Button>
-                <Button type='default' disabled>default disabled</Button>
-                <Button type='warn'>warn</Button>
-                <Button type='warn' disabled>warn disabled</Button>
-                <Button plain>plain primary</Button>
-                <Button plain disabled>plain primary disabled</Button>
-                <Button plain type='default'>plain default</Button>
-                <Button plain type='default' disabled>plain default disabled</Button>
+                <Button>按钮</Button>
+                <Button disabled>按钮</Button>
+                <Button type='default'>按钮</Button>
+                <Button type='default' disabled>按钮</Button>
+                <Button type='warn'>按钮</Button>
+                <Button type='warn' disabled>按钮</Button>
+
+                <div className='hui-minipage'>
+                    <Button plain>按钮</Button>
+                    <Button plain type='default'>按钮</Button>
+
+                    <Button size='small'>按钮</Button>
+                    <Button type='default' size='small'>按钮</Button>
+                </div>
             </Page>
         );
     }

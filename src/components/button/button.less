@@ -13,10 +13,17 @@
 button.hui-btn {
   border-width: 0;
   width: 100%;
+  &:focus {
+    outline: 0;
+  }
 }
 
 .hui-btn {
   display: block;
+  position: relative;
+  overflow: hidden;
+  padding-left: 14px;
+  padding-right: 14px;
   font-size: @huiBtnFontSize;
   color: @huiBtnFontColor;
   line-height: unit(@huiBtnHeight/@huiBtnFontSize);
@@ -24,6 +31,32 @@ button.hui-btn {
   .border-box();
   .border-radius(@huiBtnBorderRadius);
   .setTapColor();
+
+  &:after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+    transform: scale(.5);
+    transform-origin: 0 0;
+    .border-box();
+    .border-radius(@huiBtnBorderRadius*2);
+  }
+
+  &.hui-btn-small + &.hui-btn-small {
+    margin-left: @huiBtnDefaultGap;
+  }
+
+  &.hui-btn-small {
+    display: inline-block;
+    width: auto;
+    line-height: @huiBtnMiniHeight;
+    font-size: @huiBtnMiniFontSize;
+    padding: 0 .75em;
+  }
 }
 
 .hui-btn + .hui-btn {

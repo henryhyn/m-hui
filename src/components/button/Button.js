@@ -2,6 +2,13 @@ require('./button.less');
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * 按钮
+ * @param {bool} disabled - 是否不可用, 默认 false
+ * @param {bool} plain - 是否为镂空样式, 默认 false
+ * @param {string} type - 可选 primary, default, warn, 默认 primary
+ * @param {string} size - 可选 normal, small, 默认 normal
+ */
 class Button extends Component {
     constructor(props) {
         super(props);
@@ -20,6 +27,8 @@ class Button extends Component {
 
             'hui-btn-plain-primary': type === 'primary' && plain,
             'hui-btn-plain-default': type === 'default' && plain,
+
+            'hui-btn-small': size === 'small',
 
             'hui-btn-disabled': disabled
         }, className);
