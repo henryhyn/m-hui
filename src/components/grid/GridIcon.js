@@ -1,16 +1,22 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * 单元格 Icon
+ *
+ * 用法: <GridIcon><img/></GridIcon>
+ */
 class GridIcon extends Component {
     render() {
-        const { children } = this.props;
+        const { className, children } = this.props;
+        const cls = classNames({
+            'hui-grid-icon': true
+        }, className);
+
         return (
-            <div>{children}</div>
+            <div className={cls} {...this.props}>{children}</div>
         );
     }
 }
-
-GridIcon.propTypes = {};
-GridIcon.defaultProps = {};
 
 export default GridIcon;
