@@ -1,5 +1,33 @@
+@import "../../less/base/fn";
+
 .hui-page {
-  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .hui-page-header {
+    padding: 2em 0;
+    h1.title {
+      color: #3CC51F;
+      font-size: 34px;
+      font-weight: 400;
+      .hcenter();
+    }
+
+    p.sub-title {
+      color: #888;
+      font-size: 14px;
+      .hcenter();
+    }
+  }
+
+  .hui-page-body {
+    &.spacing {
+      padding: 0 15px;
+    }
+  }
 }
 
 .hui-minipage {

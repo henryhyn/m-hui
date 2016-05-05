@@ -86,7 +86,7 @@ class Home extends Component {
 
     render() {
         return (
-            <Page>
+            <Page title='九宫格' subTitle='可用于导航栏'>
                 <Grids data={this.state.components}/>
             </Page>
         );

@@ -9,19 +9,37 @@ class Page extends Component {
     }
 
     render() {
-        const { className, children } = this.props;
+        const { className, title, subTitle, spacing, children } = this.props;
         const cls = classNames({
-            'hui-page': true
+            'hui-page-body': true,
+            'spacing': spacing
         }, className);
 
         return (
-            <div className={cls} {...this.props}>{children}</div>
+            <div className='hui-page' {...this.props}>
+                <div className='hui-page-header'>
+                    {title ? <h1 className='title'>{title}</h1> : false}
+
+                    {subTitle ? <p className='sub-title'>{subTitle}</p> : false}
+                </div>
+                <div className={cls}>
+                    {children}
+                </div>
+            </div>
         );
     }
 }
 
-Page.propTypes = {};
+Page.propTypes = {
+    title: PropTypes.string,
+    subTitle: PropTypes.string,
+    spacing: PropTypes.bool
+};
 
-Page.defaultProps = {};
+Page.defaultProps = {
+    title: false,
+    subTitle: false,
+    spacing: false
+};
 
 export default Page;

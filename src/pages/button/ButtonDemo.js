@@ -10,7 +10,7 @@ class ButtonDemo extends Component {
 
     render() {
         return (
-            <Page>
+            <Page spacing title='按钮'>
                 <Button>按钮</Button>
                 <Button disabled>按钮</Button>
                 <Button type='warn'>按钮</Button>
