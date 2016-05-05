@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import { Grids } from '../../index';
+import { Page, Grids } from '../../index';
 
 class Home extends Component {
     constructor(props) {
@@ -20,7 +20,9 @@ class Home extends Component {
 
     render() {
         return (
-            <Grids data={this.state.components}/>
+            <Page>
+                <Grids data={this.state.components}/>
+            </Page>
         );
     }
 }
