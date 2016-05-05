@@ -1,2 +1,39 @@
 @import "../../less/base/fn";
 
+@huiGridColumnCount: 3;
+@huiGridBorderColor: #D9D9D9;
+@huiGridIconSize: 50px;
+
+.hui-grids {
+  position: relative;
+  &:before {
+    .setTopLine(@huiGridBorderColor);
+  }
+  &:after {
+    .setLeftLine(@huiGridBorderColor);
+  }
+
+  .hui-grid {
+    float: left;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    width: 100% / @huiGridColumnCount;
+
+    position: relative;
+    &:before {
+      .setRightLine(@huiGridBorderColor);
+    }
+    &:after {
+      .setBottomLine(@huiGridBorderColor);
+    }
+
+    .hui-grid-icon {
+      .hcenter();
+      .size(@huiGridIconSize);
+    }
+
+    .hui-grid-label {
+      .hcenter();
+    }
+  }
+}
