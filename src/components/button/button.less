@@ -10,18 +10,6 @@
 @huiBtnMiniFontSize: 14px;
 @huiBtnBorderRadius: 5px;
 
-@huiBtnDefaultBg: #F7F7F7;
-@huiBtnDefaultActiveBg: #DEDEDE;
-@huiBtnDefaultFontColor: #454545;
-@huiBtnDefaultDisabledFontColor: #C9C9C9;
-@huiBtnDefaultActiveFontColor: #A1A1A1;
-
-@huiBtnPrimaryBg: #04BE02;
-@huiBtnPrimaryActiveBg: #039702;
-
-@huiBtnWarnBg: #EF4F4F;
-@huiBtnWarnActiveBg: #C13E3E;
-
 button.hui-btn {
   border-width: 0;
   width: 100%;
@@ -42,70 +30,6 @@ button.hui-btn {
   margin-top: @huiBtnDefaultGap;
 }
 
-.hui-btn-primary {
-  background-color: @huiBtnPrimaryBg;
-  &:not(.hui-btn-disabled):visited {
-    color: @huiBtnFontColor;
-  }
-  &:not(.hui-btn-disabled):active {
-    color: @huiBtnActiveFontColor;
-    background-color: @huiBtnPrimaryActiveBg;
-  }
-}
-
-.hui-btn-default {
-  background-color: @huiBtnDefaultBg;
-  color: @huiBtnDefaultFontColor;
-  &:not(.hui-btn-disabled):visited {
-    color: @huiBtnDefaultFontColor;
-  }
-  &:not(.hui-btn-disabled):active {
-    color: @huiBtnDefaultActiveFontColor;
-    background-color: @huiBtnDefaultActiveBg;
-  }
-}
-
-.hui-btn-warn {
-  background-color: @huiBtnWarnBg;
-  &:not(.hui-btn-disabled):visited {
-    color: @huiBtnFontColor;
-  }
-  &:not(.hui-btn-disabled):active {
-    color: @huiBtnActiveFontColor;
-    background-color: @huiBtnWarnActiveBg;
-  }
-}
-
-.hui-btn-plain-primary {
-  color: @huiBtnPrimaryBg;
-  border: 1px solid @huiBtnPrimaryBg;
-  button&, input& {
-    border-width: 1px;
-    background-color: transparent;
-  }
-  &:active {
-    border-color: @huiBtnPrimaryActiveBg;
-  }
-  &:after {
-    border-width: 0;
-  }
-}
-
-.hui-btn-plain-default {
-  color: #5A5A5A;
-  border: 1px solid #5A5A5A;
-  button&, input& {
-    border-width: 1px;
-    background-color: transparent;
-  }
-  &:after {
-    border-width: 0;
-  }
-}
-
-.hui-btn-disabled {
-  color: @huiBtnDisabledFontColor;
-  &.hui-btn-default {
-    color: @huiBtnDefaultDisabledFontColor;
-  }
-}
+@import "button_primary";
+@import "button_default";
+@import "button_warn";

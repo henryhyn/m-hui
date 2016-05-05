@@ -1,0 +1,31 @@
+@huiBtnPrimaryBg: #04BE02;
+@huiBtnPrimaryActiveBg: #039702;
+
+.hui-btn-primary {
+  background-color: @huiBtnPrimaryBg;
+  &:not(.hui-btn-disabled):visited {
+    color: @huiBtnFontColor;
+  }
+  &:not(.hui-btn-disabled):active {
+    color: @huiBtnActiveFontColor;
+    background-color: @huiBtnPrimaryActiveBg;
+  }
+  &.hui-btn-disabled {
+    color: @huiBtnDisabledFontColor;
+  }
+}
+
+.hui-btn-plain-primary {
+  color: @huiBtnPrimaryBg;
+  border: 1px solid @huiBtnPrimaryBg;
+  button&, input& {
+    border-width: 1px;
+    background-color: transparent;
+  }
+  &:active {
+    border-color: @huiBtnPrimaryActiveBg;
+  }
+  &:after {
+    border-width: 0;
+  }
+}

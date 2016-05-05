@@ -1,0 +1,16 @@
+@huiBtnWarnBg: #EF4F4F;
+@huiBtnWarnActiveBg: #C13E3E;
+
+.hui-btn-warn {
+  background-color: @huiBtnWarnBg;
+  &:not(.hui-btn-disabled):visited {
+    color: @huiBtnFontColor;
+  }
+  &:not(.hui-btn-disabled):active {
+    color: @huiBtnActiveFontColor;
+    background-color: @huiBtnWarnActiveBg;
+  }
+  &.hui-btn-disabled {
+    color: @huiBtnDisabledFontColor;
+  }
+}
