@@ -5,7 +5,7 @@ var HtmlwebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 //定义了一些文件夹的路径
 var ROOT_PATH = path.resolve(__dirname);
-var APP_PATH = path.resolve(ROOT_PATH, 'app');
+var SRC_PATH = path.resolve(ROOT_PATH, 'src');
 var DIST_PATH = path.resolve(ROOT_PATH, 'dist');
 var TEM_PATH = path.resolve(ROOT_PATH, 'templates');
 
@@ -13,7 +13,7 @@ module.exports = {
     // 入口. 让 webpack 用哪个文件作为项目的入口
     // 可以直接用文件夹名称, 默认会找 index.js, 也可以确定是哪个文件名字
     entry: {
-        app: './app/app.js'
+        app: './src/app.js'
     },
     // 出口. 让 webpack 把处理完成的文件放在哪里
     // 用一个数组 [name] 来代替, 它会根据 entry 的入口文件名称生成多个 js 文件
@@ -40,19 +40,19 @@ module.exports = {
     module: {
         preLoaders: [{
             test: /\.(js|jsx)$/,
-            include: APP_PATH,
+            include: SRC_PATH,
             loader: 'eslint-loader'
         }],
         loaders: [{
             test: /\.(js|jsx)$/,
-            include: APP_PATH,
+            include: SRC_PATH,
             loader: 'babel',
             query: {
                 presets: ['react', 'es2015']
             }
         }, {
             test: /\.less$/,
-            include: APP_PATH,
+            include: SRC_PATH,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader!less-loader?sourceMap')
         }, {
             test: /\.(png|jpg)$/,
