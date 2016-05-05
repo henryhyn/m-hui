@@ -3,6 +3,12 @@ import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import { Mask, Icon } from '../../index';
 
+/**
+ * Toast
+ *
+ * Toast 用于临时显示某些信息，并且会在数秒后自动消失。这些信息通常是轻量级操作的成功、失败或等待状态信息。
+ * @param {bool} transparent - 是否透明, 默认 false
+ */
 class Toast extends Component {
     constructor(props) {
         super(props);
