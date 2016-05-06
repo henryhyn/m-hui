@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
+import { Page } from '../../index';
 
 class ActionSheetDemo extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class ActionSheetDemo extends Component {
 
     render() {
         return (
-            <div>开发中, 敬请期待...</div>
+            <Page title='ActionSheet'>开发中, 敬请期待...</Page>
         );
     }
 }

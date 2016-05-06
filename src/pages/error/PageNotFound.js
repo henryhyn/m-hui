@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
+import { Page } from '../../index';
 
 class PageNotFound extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class PageNotFound extends Component {
 
     render() {
         return (
-            <div>未找到该页面, 可能正处于开发中...</div>
+            <Page title='404'>未找到该页面, 可能正处于开发中...</Page>
         );
     }
 }
