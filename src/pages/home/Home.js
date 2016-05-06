@@ -30,99 +30,99 @@ class Home extends Component {
             components: [{
                 icon: <img src={IconButton}/>,
                 label: '按钮',
-                href: 'button'
+                href: '#button'
             }, {
                 icon: <img src={IconCell}/>,
                 label: 'Cell',
-                href: 'cell'
+                href: '#cell'
             }, {
                 icon: <img src={IconCell}/>,
                 label: '表单',
-                href: 'form'
+                href: '#form'
             }, {
                 icon: <img src={IconToast}/>,
                 label: 'Toast',
-                href: 'toast'
+                href: '#toast'
             }, {
                 icon: <img src={IconDialog}/>,
                 label: '对话框',
-                href: 'dialog'
+                href: '#dialog'
             }, {
                 icon: <img src={IconProgress}/>,
                 label: '进度条',
-                href: 'progress'
+                href: '#progress'
             }, {
                 icon: <img src={IconMsg}/>,
                 label: 'Msg',
-                href: 'msg'
+                href: '#msg'
             }, {
                 icon: <img src={IconArticle}/>,
                 label: '文章',
-                href: 'article'
+                href: '#article'
             }, {
                 icon: <img src={IconActionSheet}/>,
                 label: 'ActionSheet',
-                href: 'actionsheet'
+                href: '#actionsheet'
             }, {
                 icon: <img src={IconIcons}/>,
                 label: 'Icons',
-                href: 'icons'
+                href: '#icons'
             }, {
                 icon: <img src={IconPanel}/>,
                 label: '面板',
-                href: 'panel'
+                href: '#panel'
             }, {
                 icon: <img src={IconTab}/>,
                 label: 'TabBar',
-                href: 'tabbar'
+                href: '#tabbar'
             }, {
                 icon: <img src={IconTab}/>,
                 label: 'NavBar',
-                href: 'navbar'
+                href: '#navbar'
             }, {
                 icon: <img src={IconSearchBar}/>,
                 label: '搜索框',
-                href: 'searchbar'
+                href: '#searchbar'
             }, {
                 icon: <img src={IconRefresh}/>,
                 label: '下拉刷新',
-                href: 'refresh'
+                href: '#refresh'
             }, {
                 icon: <img src={IconScroll}/>,
                 label: '滚动加载',
-                href: 'scroll'
+                href: '#scroll'
             }, {
                 icon: <img src={IconPanel}/>,
                 label: 'Popup',
-                href: 'popup'
+                href: '#popup'
             }, {
                 icon: <img src={IconCalendar}/>,
                 label: '日历',
-                href: 'Calendar'
+                href: '#Calendar'
             }, {
                 icon: <img src={IconCity}/>,
                 label: '城市',
-                href: 'city'
+                href: '#city'
             }, {
                 icon: <img src={IconDateTime}/>,
                 label: '日期时间',
-                href: 'datetime'
+                href: '#datetime'
             }, {
                 icon: <img src={IconNotify}/>,
                 label: '通知',
-                href: 'notify'
+                href: '#notify'
             }, {
                 icon: <img src={IconPicker}/>,
                 label: 'Picker',
-                href: 'picker'
+                href: '#picker'
             }, {
                 icon: <img src={IconSelect}/>,
                 label: 'Select',
-                href: 'select'
+                href: '#select'
             }, {
                 icon: <img src={IconSwiper}/>,
                 label: '轮播',
-                href: 'swiper'
+                href: '#swiper'
             }]
         };
     }
