@@ -73,8 +73,12 @@ class Home extends Component {
                 href: 'panel'
             }, {
                 icon: <img src={IconTab}/>,
-                label: 'Tab',
-                href: 'tab'
+                label: 'TabBar',
+                href: 'tabbar'
+            }, {
+                icon: <img src={IconTab}/>,
+                label: 'NavBar',
+                href: 'navbar'
             }, {
                 icon: <img src={IconSearchBar}/>,
                 label: '搜索框',
