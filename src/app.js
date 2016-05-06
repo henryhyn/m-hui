@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
 
 import Home from './pages/home/Home';
@@ -19,11 +20,20 @@ import NavBar from './pages/navbar/NavBarDemo';
 import SearchBar from './pages/searchbar/SearchBarDemo';
 import PageNotFound from './pages/error/PageNotFound';
 
-class App extends Component {
+class App extends React.Component {
     render() {
-        const { children } = this.props;
         return (
-            <div>{children}</div>
+            <ReactCSSTransitionGroup
+                component="div"
+                transitionName="hui-page"
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={500}
+                style={{height: '100%'}}
+                >
+                {React.cloneElement(this.props.children, {
+                    key: this.props.location.pathname
+                })}
+            </ReactCSSTransitionGroup>
         );
     }
 }
