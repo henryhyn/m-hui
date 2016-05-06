@@ -29,7 +29,7 @@ class Home extends Component {
         this.state = {
             components: [{
                 icon: <img src={IconButton}/>,
-                label: '按钮',
+                label: 'Button',
                 href: '#button'
             }, {
                 icon: <img src={IconCell}/>,
@@ -37,7 +37,7 @@ class Home extends Component {
                 href: '#cell'
             }, {
                 icon: <img src={IconCell}/>,
-                label: '表单',
+                label: 'Form',
                 href: '#form'
             }, {
                 icon: <img src={IconToast}/>,
@@ -45,11 +45,11 @@ class Home extends Component {
                 href: '#toast'
             }, {
                 icon: <img src={IconDialog}/>,
-                label: '对话框',
+                label: 'Dialog',
                 href: '#dialog'
             }, {
                 icon: <img src={IconProgress}/>,
-                label: '进度条',
+                label: 'Progress',
                 href: '#progress'
             }, {
                 icon: <img src={IconMsg}/>,
@@ -57,7 +57,7 @@ class Home extends Component {
                 href: '#msg'
             }, {
                 icon: <img src={IconArticle}/>,
-                label: '文章',
+                label: 'Article',
                 href: '#article'
             }, {
                 icon: <img src={IconActionSheet}/>,
@@ -69,7 +69,7 @@ class Home extends Component {
                 href: '#icons'
             }, {
                 icon: <img src={IconPanel}/>,
-                label: '面板',
+                label: 'Panel',
                 href: '#panel'
             }, {
                 icon: <img src={IconTab}/>,
@@ -81,15 +81,15 @@ class Home extends Component {
                 href: '#navbar'
             }, {
                 icon: <img src={IconSearchBar}/>,
-                label: '搜索框',
+                label: 'SearchBar',
                 href: '#searchbar'
             }, {
                 icon: <img src={IconRefresh}/>,
-                label: '下拉刷新',
+                label: 'Refresh',
                 href: '#refresh'
             }, {
                 icon: <img src={IconScroll}/>,
-                label: '滚动加载',
+                label: 'Scroll',
                 href: '#scroll'
             }, {
                 icon: <img src={IconPanel}/>,
@@ -97,19 +97,19 @@ class Home extends Component {
                 href: '#popup'
             }, {
                 icon: <img src={IconCalendar}/>,
-                label: '日历',
+                label: 'Calendar',
                 href: '#Calendar'
             }, {
                 icon: <img src={IconCity}/>,
-                label: '城市',
+                label: 'City',
                 href: '#city'
             }, {
                 icon: <img src={IconDateTime}/>,
-                label: '日期时间',
+                label: 'DateTime',
                 href: '#datetime'
             }, {
                 icon: <img src={IconNotify}/>,
-                label: '通知',
+                label: 'Notify',
                 href: '#notify'
             }, {
                 icon: <img src={IconPicker}/>,
@@ -121,7 +121,7 @@ class Home extends Component {
                 href: '#select'
             }, {
                 icon: <img src={IconSwiper}/>,
-                label: '轮播',
+                label: 'Swiper',
                 href: '#swiper'
             }]
         };
