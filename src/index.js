@@ -16,6 +16,15 @@ import CellFooter from './components/cell/CellFooter';
 import Cells from './components/cell/Cells';
 import CellsTitle from './components/cell/CellsTitle';
 import CellsTips from './components/cell/CellsTips';
+import Form from './components/form/Form';
+import FormCell from './components/form/FormCell';
+import Checkbox from './components/form/Checkbox';
+import Input from './components/form/Input';
+import Radio from './components/form/Radio';
+import Select from './components/form/Select';
+import Switch from './components/form/Switch';
+import TextArea from './components/form/TextArea';
+import Uploader from './components/form/Uploader';
 
 export {
     Page
