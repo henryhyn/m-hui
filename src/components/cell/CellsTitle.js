@@ -1,6 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * Cells Title
+ *
+ * 用法: <CellsTitle>文本</CellsTitle>
+ */
 class CellsTitle extends Component {
     constructor(props) {
         super(props);

@@ -1,6 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * Cell Body
+ *
+ * 用法: <CellBody></CellBody>
+ */
 class CellBody extends Component {
     constructor(props) {
         super(props);

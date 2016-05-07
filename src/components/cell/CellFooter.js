@@ -1,6 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * Cell Footer
+ *
+ * 用法: <CellFooter>文本</CellFooter>
+ */
 class CellFooter extends Component {
     constructor(props) {
         super(props);

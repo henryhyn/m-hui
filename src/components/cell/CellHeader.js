@@ -1,6 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * Cell Header
+ *
+ * 用法: <CellHeader></CellHeader>
+ */
 class CellHeader extends Component {
     constructor(props) {
         super(props);
