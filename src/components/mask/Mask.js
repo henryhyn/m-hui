@@ -1,4 +1,4 @@
-require('./mask.less');
+import './mask.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 

@@ -1,4 +1,4 @@
-require('./grid.less');
+import './grid.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import { Grid } from '../../index';

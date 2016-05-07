@@ -1,4 +1,4 @@
-require('./button.less');
+import './button.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 

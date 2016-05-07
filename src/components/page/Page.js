@@ -1,4 +1,4 @@
-require('./page.less');
+import './page.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 

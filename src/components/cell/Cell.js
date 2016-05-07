@@ -1,4 +1,4 @@
-require('./cell.less');
+import './cell.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
