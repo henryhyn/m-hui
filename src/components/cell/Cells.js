@@ -1,6 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * 遮罩层
+ * @param {bool} transparent - 是否透明, 默认 false
+ */
 class Cells extends Component {
     constructor(props) {
         super(props);
@@ -8,7 +12,7 @@ class Cells extends Component {
     }
 
     render() {
-        const { className, access, children } = this.props;
+        const { className, access, radio, checkbox, children } = this.props;
         const cls = classNames({
             'hui-cells': true,
             'hui-cells-access': access
@@ -20,8 +24,16 @@ class Cells extends Component {
     }
 }
 
-Cells.propTypes = {};
+Cells.propTypes = {
+    access: PropTypes.bool,
+    radio: PropTypes.bool,
+    checkbox: PropTypes.bool
+};
 
-Cells.defaultProps = {};
+Cells.defaultProps = {
+    access: false,
+    radio: false,
+    checkbox: false
+};
 
 export default Cells;

@@ -8,6 +8,11 @@ import { GridIcon, GridLabel } from '../../index';
  * @param {any} icon - 单元格 Icon, 一般为 img 对象, 默认忽略
  */
 class Grid extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
     render() {
         const { icon, label, children, className } = this.props;
         const cls = classNames({
