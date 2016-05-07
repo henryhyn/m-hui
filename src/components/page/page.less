@@ -28,6 +28,23 @@
       padding: 0 15px;
     }
   }
+
+  &.home {
+    &.hui-page-enter {
+      z-index: 0;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      &.hui-page-enter-active {
+
+      }
+    }
+    &.hui-page-leave {
+      &.hui-page-leave-active {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
 }
 
 .hui-minipage {

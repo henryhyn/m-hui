@@ -13,10 +13,10 @@ class Page extends Component {
         const cls = classNames({
             'hui-page-body': true,
             'spacing': spacing
-        }, className);
+        });
 
         return (
-            <div className='hui-page' {...this.props}>
+            <div className={`hui-page ${className}`}>
                 <div className='hui-page-header'>
                     {title ? <h1 className='title'>{title}</h1> : false}
 
