@@ -129,7 +129,7 @@ class Home extends Component {
 
     render() {
         return (
-            <Page title='HUI Mobile' subTitle='基于 React 开发的移动端轻量 UI 库'>
+            <Page className='home' title='HUI Mobile' subTitle='基于 React 开发的移动端轻量 UI 库'>
                 <Grids data={this.state.components}/>
             </Page>
         );
