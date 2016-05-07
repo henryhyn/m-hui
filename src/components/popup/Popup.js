@@ -1,0 +1,21 @@
+import React, { Component, PropTypes } from 'react';
+import classNames from 'classnames';
+
+class Popup extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
+    render() {
+        return (
+            <div />
+        );
+    }
+}
+
+Popup.propTypes = {};
+
+Popup.defaultProps = {};
+
+export default Popup;
