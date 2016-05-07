@@ -1,7 +1,11 @@
-require('./page.less');
+import './page.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * 遮罩层
+ * @param {bool} transparent - 是否透明, 默认 false
+ */
 class Page extends Component {
     constructor(props) {
         super(props);

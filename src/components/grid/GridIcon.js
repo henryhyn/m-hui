@@ -7,6 +7,11 @@ import classNames from 'classnames';
  * 用法: <GridIcon><img/></GridIcon>
  */
 class GridIcon extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
     render() {
         const { className, children } = this.props;
         const cls = classNames({
@@ -18,5 +23,9 @@ class GridIcon extends Component {
         );
     }
 }
+
+GridIcon.propTypes = {};
+
+GridIcon.defaultProps = {};
 
 export default GridIcon;

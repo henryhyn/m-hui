@@ -1,6 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * 遮罩层
+ * @param {bool} transparent - 是否透明, 默认 false
+ */
 class Switch extends Component {
     constructor(props) {
         super(props);
@@ -8,14 +12,23 @@ class Switch extends Component {
     }
 
     render() {
+        const { className } = this.props;
+        const cls = classNames({
+            'hui-switch': true
+        }, className);
+
         return (
-            <div />
+            <input className={cls} type="checkbox" {...this.props}/>
         );
     }
 }
 
-Switch.propTypes = {};
+Switch.propTypes = {
+    defaultValue: PropTypes.string
+};
 
-Switch.defaultProps = {};
+Switch.defaultProps = {
+    defaultValue: undefined
+};
 
 export default Switch;
