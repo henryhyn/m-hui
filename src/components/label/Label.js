@@ -1,6 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * Label
+ *
+ * 用法: <Label>文本</Label>
+ */
 class Label extends Component {
     constructor(props) {
         super(props);
@@ -8,8 +13,13 @@ class Label extends Component {
     }
 
     render() {
+        const { className, children } = this.props;
+        const cls = classNames({
+            'hui-label': true
+        }, className);
+
         return (
-            <div />
+            <label className={cls} {...this.props}>{children}</label>
         );
     }
 }

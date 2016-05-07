@@ -1,6 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
+/**
+ * Panel Header
+ *
+ * 用法: <PanelHeader>文本</PanelHeader>
+ */
 class PanelHeader extends Component {
     constructor(props) {
         super(props);
@@ -8,8 +13,13 @@ class PanelHeader extends Component {
     }
 
     render() {
+        const { children } = this.props;
+        const className = classNames({
+            'hui-panel-hd': true
+        });
+
         return (
-            <div />
+            <div className={className} {...this.props}>{children}</div>
         );
     }
 }
