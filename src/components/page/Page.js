@@ -20,7 +20,7 @@ class Page extends Component {
         });
 
         return (
-            <div className={`hui-page ${className}`}>
+            <div className={`hui-page ${className ? className : ''}`}>
                 <div className='hui-page-header'>
                     {title ? <h1 className='title'>{title}</h1> : false}
 

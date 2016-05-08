@@ -55,7 +55,7 @@ class FormDemo extends Component {
 
     render() {
         return (
-            <Page className="cell" title="Cell">
+            <Page title="Cell">
                 <CellsTitle>单选列表项</CellsTitle>
                 <Form radio>
                     <FormCell radio>
