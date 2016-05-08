@@ -1,0 +1,17 @@
+@import "../../less/base/fn";
+
+.hui-btn-area {
+  margin: @huiCellsMarginTop @huiBtnDefaultGap .3em;
+  &.hui-btn-area-inline {
+    display: flex;
+    .hui-btn {
+      margin-top: auto;
+      margin-right: @huiBtnDefaultGap;
+      width: 100%;
+      flex: 1;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
