@@ -5,6 +5,17 @@
   -webkit-border-radius: @radius;
 }
 
+//画圆
+.circle(@diameter) {
+  .border-radius(@diameter/2);
+  .size(@diameter);
+}
+
+// 居中
+.center() {
+  text-align: center;
+}
+
 // 尺寸
 .size(@width; @height) {
   width: @width;
@@ -15,8 +26,73 @@
   .size(@size, @size);
 }
 
-// 画圆
-.circle(@diameter) {
-  .border-radius(@diameter/2);
-  .size(@diameter);
+// 位置
+.pos(@left;@top) {
+  left: @left;
+  top: @top;
+}
+
+.abs(@left;@top) {
+  position: absolute;
+  .pos(@left; @top);
+}
+
+// 相对定位
+.rel() {
+  position: relative;
+}
+
+// 旋转
+.rotate(@angel) {
+  -webkit-transform: rotate(@arguments);
+  transform: rotate(@arguments);
+}
+
+// 截字
+.limitText(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+
+// -webkit-box布局
+.wbox() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+}
+
+// 自适应
+.wflex() {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -ms-box-flex: 1;
+  -ms-flex: 1;
+}
+
+// 布局
+.wcenter() {
+  .wbox();
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+
+// 字体大小
+.f14() {
+  font-size: 14px;
+}
+
+.f15() {
+  font-size: 15px;
+}
+
+.f12() {
+  font-size: 12px;
 }

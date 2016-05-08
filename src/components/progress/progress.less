@@ -1,0 +1,30 @@
+@import "../../less/base/fn";
+
+@huiProgressBg: #EBEBEB;
+@huiProgressColor: #09BB07;
+@huiProgressHeight: 3px;
+@huiProgressCloseBg: #EF4F4F;
+@huiProgressActiveBg: #C13E3E;
+
+.hui-progress {
+  display: flex;
+  align-items: center;
+}
+
+.hui-progress-bar {
+  background-color: @huiProgressBg;
+  height: @huiProgressHeight;
+  flex: 1;
+}
+
+.hui-progress-inner-bar {
+  width: 0;
+  height: 100%;
+  background-color: @huiProgressColor;
+}
+
+.hui-progress-opr {
+  display: block;
+  margin-left: 15px;
+  font-size: 0;
+}

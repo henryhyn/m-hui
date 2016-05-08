@@ -1,0 +1,38 @@
+@import "../../less/base/fn";
+
+// method2 accessbility
+.hui-cells-radio {
+  .hui-cell-ft {
+    padding-left: @huiCellInnerGapH;
+  }
+  .hui-cell {
+    &:active {
+      background-color: #ECECEC;
+    }
+  }
+}
+
+.hui-check {
+  // radio
+  .hui-cells-radio & {
+    &:checked {
+      & + .hui-icon-checked {
+        &:before {
+          display: block;
+          content: '\EA08';
+          color: #09BB07;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.hui-check-label {
+  .setTapColor();
+}
+
+.hui-check {
+  position: absolute;
+  left: -9999em;
+}

@@ -1,0 +1,95 @@
+@import "../../less/base/fn";
+
+@huiDialogBackgroundColor: #FAFAFC;
+@huiDialogLineColor: #D5D5D6;
+@huiDialogLinkColor: #3CC51F;
+@huiDialogLinkActiveBc: #EEEEEE;
+
+.hui-dialog {
+  position: fixed;
+  z-index: 13;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: @huiDialogBackgroundColor;
+  text-align: center;
+  border-radius: 3px;
+  .hui-dialog-confirm & {
+    .hui-dialog-hd {
+      padding: 1.2em 20px .5em;
+    }
+    .hui-dialog-bd {
+      text-align: left;
+    }
+  }
+}
+
+.hui-dialog-hd {
+  padding: 1.2em 0 .5em;
+}
+
+.hui-dialog-title {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.hui-dialog-bd {
+  padding: 0 20px;
+  font-size: 15px;
+  color: @globalTextColor;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.hui-dialog-ft {
+  position: relative;
+  line-height: 42px;
+  margin-top: 20px;
+  font-size: 17px;
+  display: flex;
+  a {
+    display: block;
+    flex: 1;
+    color: @huiDialogLinkColor;
+    text-decoration: none;
+    .setTapColor;
+    &:active {
+      background-color: @huiDialogLinkActiveBc;
+    }
+  }
+  &:after {
+    content: " ";
+    .setTopLine(@huiDialogLineColor);
+  }
+  .hui-dialog-confirm & {
+    a {
+      position: relative;
+      &:after {
+        content: " ";
+        .setLeftLine(@huiDialogLineColor);
+      }
+      &:first-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.hui-btn-dialog {
+  &.default {
+    color: #353535;
+  }
+  &.primary {
+    color: #0BB20C;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hui-dialog {
+    width: 35%;
+  }
+}

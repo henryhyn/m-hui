@@ -1,3 +1,4 @@
+import './msg.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import { Button, Icon } from '../../index';

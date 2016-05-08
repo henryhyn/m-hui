@@ -1,0 +1,105 @@
+@import "../../less/base/fn";
+
+@huiUploaderBorderColor: #D9D9D9;
+@huiUploaderActiveBorderColor: #999999;
+@huiUploaderFileSpacing: 9px;
+@huiUploaderSize: 79px;
+@huiUploaderBorderWidth: 1px;
+
+.hui-uploader {
+}
+
+.hui-uploader-hd {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  .hui-cell-ft {
+    font-size: 1em;
+  }
+}
+
+.hui-uploader-bd {
+  margin-bottom: @huiCellGapH - (@huiCellGapV + @huiUploaderFileSpacing);
+  margin-right: -@huiUploaderFileSpacing;
+  overflow: hidden;
+}
+
+.hui-uploader-files {
+  list-style: none;
+}
+
+.hui-uploader-file {
+  float: left;
+  margin-right: @huiUploaderFileSpacing;
+  margin-bottom: @huiUploaderFileSpacing;
+  width: @huiUploaderSize;
+  height: @huiUploaderSize;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.hui-uploader-status {
+  position: relative;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  .hui-uploader-status-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+  }
+  .hui-icon-warn {
+    display: block;
+  }
+}
+
+.hui-uploader-input-wrp {
+  float: left;
+  position: relative;
+  margin-right: @huiUploaderFileSpacing;
+  margin-bottom: @huiUploaderFileSpacing;
+  width: @huiUploaderSize - @huiUploaderBorderWidth * 2;
+  height: @huiUploaderSize - @huiUploaderBorderWidth * 2;
+  border: @huiUploaderBorderWidth solid @huiUploaderBorderColor;
+  &:before, &:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: @huiUploaderBorderColor;
+  }
+  &:before {
+    width: @huiUploaderBorderWidth + 1;
+    height: @huiUploaderSize / 2;
+  }
+  &:after {
+    width: @huiUploaderSize / 2;
+    height: @huiUploaderBorderWidth + 1;
+  }
+  &:active {
+    border-color: @huiUploaderActiveBorderColor;
+    &:before, &:after {
+      background-color: @huiUploaderActiveBorderColor;
+    }
+  }
+}
+
+.hui-uploader-input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import { Page, Cell, CellHeader, CellBody, CellFooter, Cells, CellsTitle, CellsTips } from '../../index';
 import iconSrc from './icon.png';
-import vcodeSrc from './vcode.jpg';
-import avatarSrc from './avatar.jpg';
 
 class CellDemo extends Component {
     constructor(props) {

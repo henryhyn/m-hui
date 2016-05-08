@@ -1,0 +1,44 @@
+@import "../../less/base/fn";
+
+.hui-cells-checkbox {
+  .hui-cell-hd {
+    padding-right: @huiCellInnerGapH;
+  }
+  .hui-cell {
+    &:active {
+      background-color: #ECECEC;
+    }
+  }
+  .hui-icon-checked {
+    &:before {
+      content: '\EA01';
+      color: #C9C9C9;
+      font-size: 23px;
+      display: block;
+    }
+  }
+}
+
+// method2 accessbility
+.hui-check {
+  // checkbox
+  .hui-cells-checkbox & {
+    &:checked {
+      & + .hui-icon-checked {
+        &:before {
+          content: '\EA06';
+          color: #09BB07;
+        }
+      }
+    }
+  }
+}
+
+.hui-check-label {
+  .setTapColor();
+}
+
+.hui-check {
+  position: absolute;
+  left: -9999em;
+}

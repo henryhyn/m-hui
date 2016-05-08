@@ -1,0 +1,55 @@
+@import "../../less/base/fn";
+
+@huiMsgPaddingTop: 36px;
+@huiMsgIconGap: 30px;
+@huiMsgTitleGap: 5px;
+@huiMsgTextGap: 25px;
+@huiMsgOprGap: 25px;
+@huiMsgExtraAreaGap: 15px;
+@huiMsgExtraAreaOfMinHeight: 438px;
+
+.hui-msg {
+  padding-top: @huiMsgPaddingTop;
+  text-align: center;
+
+  .hui-icon-area {
+    margin-bottom: @huiMsgIconGap;
+  }
+
+  .hui-text-area {
+    margin-bottom: @huiMsgTextGap;
+    padding: 0 20px;
+  }
+  .hui-msg-title {
+    margin-bottom: @huiMsgTitleGap;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .hui-msg-desc {
+    font-size: 14px;
+    color: @globalTextColor;
+  }
+
+  .hui-opr-area {
+    margin-bottom: @huiMsgOprGap;
+  }
+
+  .hui-extra-area {
+    margin-bottom: @huiMsgExtraAreaGap;
+    font-size: 14px;
+    color: @globalTextColor;
+    a {
+      color: @globalLinkColor;
+    }
+  }
+}
+
+@media screen and (min-height: @huiMsgExtraAreaOfMinHeight) {
+  .hui-extra-area {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

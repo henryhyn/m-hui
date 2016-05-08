@@ -1,3 +1,4 @@
+import './progress.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import { Icon } from '../../index';

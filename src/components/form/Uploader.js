@@ -1,3 +1,4 @@
+import './uploader.less';
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';

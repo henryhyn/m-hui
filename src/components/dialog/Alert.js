@@ -1,3 +1,4 @@
+import './dialog.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import { Mask } from '../../index';
