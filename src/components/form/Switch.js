@@ -1,4 +1,4 @@
-import './hui_switch.less';
+import './switch.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
