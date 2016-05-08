@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import {
     Page,
-    ButtonArea,
-    Button,
     Cells,
     CellsTitle,
     CellsTips,
