@@ -30,7 +30,7 @@ class Msg extends Component {
         return (
             <div className="hui-msg">
                 <div className="hui-icon-area">
-                    <Icon value={this.props.type} className="hui-icon-msg"/>
+                    <Icon value={this.props.type} size='large'/>
                 </div>
                 <div className="hui-text-area">
                     <h2 className="hui-msg-title">{this.props.title}</h2>

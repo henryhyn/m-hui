@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import { Page, Grids } from '../../index';
+import { Page, Grids, Icon } from '../../index';
 import IconButton from './icon_nav_button.png';
 import IconCell from './icon_nav_cell.png';
 import IconToast from './icon_nav_toast.png';
@@ -52,7 +52,7 @@ class Home extends Component {
                 label: 'Progress',
                 href: '#progress'
             }, {
-                icon: <img src={IconMsg}/>,
+                icon: <Icon type='success' size='medium'/>,
                 label: 'Msg',
                 href: '#msg'
             }, {
