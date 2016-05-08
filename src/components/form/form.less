@@ -1,4 +1,4 @@
-@import "../../../less/base/fn";
+@import "../../less/base/fn";
 
 .hui-label {
   display: block;
@@ -76,5 +76,18 @@
   }
   input, textarea, label[for] {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.hui-vcode {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  .hui-cell-ft {
+    img {
+      margin-left: 5px;
+      height: @huiCellHeight;
+      vertical-align: middle;
+    }
   }
 }
