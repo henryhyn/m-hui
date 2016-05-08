@@ -20,7 +20,7 @@ class Grids extends Component {
     }
 
     render() {
-        const { data, children, className } = this.props;
+        const { className, data, children } = this.props;
         const cls = classNames({
             'hui-grids': true
         }, className);
