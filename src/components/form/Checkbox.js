@@ -1,4 +1,4 @@
-import './hui_check.less';
+import './checkbox.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
