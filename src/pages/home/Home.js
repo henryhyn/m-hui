@@ -36,11 +36,11 @@ class Home extends Component {
                 label: 'Cell',
                 href: '#cell'
             }, {
-                icon: <img src={IconCell}/>,
+                icon: <img src={IconToast}/>,
                 label: 'Form',
                 href: '#form'
             }, {
-                icon: <img src={IconToast}/>,
+                icon: <Icon value='success-no-circle' size='medium'/>,
                 label: 'Toast',
                 href: '#toast'
             }, {
@@ -52,7 +52,7 @@ class Home extends Component {
                 label: 'Progress',
                 href: '#progress'
             }, {
-                icon: <Icon type='success' size='medium'/>,
+                icon: <Icon value='success' size='medium'/>,
                 label: 'Msg',
                 href: '#msg'
             }, {
@@ -64,7 +64,7 @@ class Home extends Component {
                 label: 'ActionSheet',
                 href: '#actionsheet'
             }, {
-                icon: <img src={IconIcons}/>,
+                icon: <Icon value='waiting-circle' size='medium'/>,
                 label: 'Icons',
                 href: '#icons'
             }, {
@@ -80,11 +80,11 @@ class Home extends Component {
                 label: 'NavBar',
                 href: '#navbar'
             }, {
-                icon: <img src={IconSearchBar}/>,
+                icon: <Icon value='search' size='medium'/>,
                 label: 'SearchBar',
                 href: '#searchbar'
             }, {
-                icon: <img src={IconRefresh}/>,
+                icon: <Icon value='download' size='medium'/>,
                 label: 'Refresh',
                 href: '#refresh'
             }, {
@@ -108,7 +108,7 @@ class Home extends Component {
                 label: 'DateTime',
                 href: '#datetime'
             }, {
-                icon: <img src={IconNotify}/>,
+                icon: <Icon value='info-circle' size='medium'/>,
                 label: 'Notify',
                 href: '#notify'
             }, {
