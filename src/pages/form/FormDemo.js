@@ -140,11 +140,6 @@ class FormDemo extends Component {
                     </FormCell>
                 </Form>
 
-                <ButtonArea>
-                    <Button>确定</Button>
-                    <Button type="default">取消</Button>
-                </ButtonArea>
-
                 <CellsTitle>上传</CellsTitle>
                 <Form>
                     <FormCell>
