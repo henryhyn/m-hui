@@ -1,0 +1,30 @@
+@import "../../../less/base/fn";
+@import "./hui_select";
+
+.hui-select-before {
+  padding-right: @huiCellGapH;
+  .hui-select {
+    width: auto;
+  }
+  .hui-cell-hd {
+    position: relative;
+    &:after {
+      .setRightLine(@huiCellBorderColor);
+    }
+    &:before {
+      content: " ";
+      .setArrow_Wap(right, 6px, #C8C8CD, 2px);
+
+      position: absolute;
+      top: 50%;
+      right: @huiCellGapH;
+      margin-top: -3px;
+    }
+  }
+  .hui-cell-bd {
+    padding-left: @huiCellGapH;
+    &:after {
+      display: none;
+    }
+  }
+}

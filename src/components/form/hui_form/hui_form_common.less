@@ -1,0 +1,80 @@
+@import "../../../less/base/fn";
+
+.hui-label {
+  display: block;
+  width: 3em;
+}
+
+.hui-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  height: unit(@huiCellLineHeight, em);
+  line-height: @huiCellLineHeight;
+
+  // hides the spin-button
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.hui-textarea {
+  display: block;
+  border: 0;
+  resize: none;
+  width: 100%;
+  color: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  outline: 0;
+}
+
+.hui-textarea-counter {
+  color: @globalDescColor;
+  text-align: right;
+  .hui-cell-warn & {
+    color: @globalWarnColor;
+  }
+}
+
+.hui-toptips {
+  display: none;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  width: 100%;
+  top: 0;
+  line-height: 2.3;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+  z-index: 2;
+  &.hui-warn {
+    background-color: @globalWarnColor;
+  }
+}
+
+.hui-cells-form {
+  .hui-cell-warn {
+    color: @globalWarnColor;
+    .hui-icon-warn {
+      display: inline-block;
+    }
+  }
+  .hui-cell-hd {
+    padding-right: .3em;
+  }
+  .hui-cell-ft {
+    font-size: 0;
+  }
+  .hui-icon-warn {
+    display: none;
+  }
+  input, textarea, label[for] {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}

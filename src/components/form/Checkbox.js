@@ -1,3 +1,4 @@
+import './hui_check.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 

@@ -1,3 +1,4 @@
+import './hui_form.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
