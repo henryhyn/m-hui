@@ -1,0 +1,67 @@
+@import "../../less/base/fn";
+
+.hui-cell-select {
+  padding: 0;
+  .hui-select {
+    padding-right: 30px;
+  }
+  .hui-access-icon {
+
+  }
+  .hui-cell-bd {
+    &:after {
+      content: " ";
+      .setArrow_Wap(right, 6px, #C8C8CD, 2px);
+
+      position: absolute;
+      top: 50%;
+      right: @huiCellGapH;
+      margin-top: -3px;
+    }
+  }
+}
+
+.hui-select {
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  width: 100%;
+  font-size: inherit;
+  height: @huiCellHeight;
+  position: relative;
+  z-index: 1;
+  padding-left: @huiCellGapH;
+}
+
+.hui-select-after {
+  padding-left: @huiCellGapH;
+}
+
+.hui-select-before {
+  padding-right: @huiCellGapH;
+  .hui-select {
+    width: auto;
+  }
+  .hui-cell-hd {
+    position: relative;
+    &:after {
+      .setRightLine(@huiCellBorderColor);
+    }
+    &:before {
+      content: " ";
+      .setArrow_Wap(right, 6px, #C8C8CD, 2px);
+
+      position: absolute;
+      top: 50%;
+      right: @huiCellGapH;
+      margin-top: -3px;
+    }
+  }
+  .hui-cell-bd {
+    padding-left: @huiCellGapH;
+    &:after {
+      display: none;
+    }
+  }
+}
