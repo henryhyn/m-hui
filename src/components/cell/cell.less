@@ -1,18 +1,5 @@
 @import "../../less/base/fn";
 
-@huiCellBg: #FFFFFF;
-@huiCellBorderColor: #D9D9D9;
-@huiCellGapV: 10px;
-@huiCellGapH: 15px;
-@huiCellInnerGapH: .35em;
-@huiCellHeight: 44px;
-@huiCellFontSize: 17px;
-@huiCellTipsFontSize: 14px;
-
-@huiCellLineHeight: unit((@huiCellHeight - 2 * @huiCellGapV) / @huiCellFontSize);
-// 高度为44px，减去上下padding的行高
-@huiCellsMarginTop: unit(20 / @huiCellFontSize, em);
-
 .hui-cells {
   margin-top: @huiCellsMarginTop;
   background-color: @huiCellBg;
