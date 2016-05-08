@@ -15,13 +15,13 @@ class Page extends Component {
     render() {
         const { className, title, subTitle, spacing, children } = this.props;
         const cls = classNames({
-            'hui-page-body': true,
+            'hui-page-bd': true,
             'spacing': spacing
         });
 
         return (
-            <div className={`hui-page ${className}`}>
-                <div className='hui-page-header'>
+            <div className={`hui-page ${className ? className : ''}`}>
+                <div className='hui-page-hd'>
                     {title ? <h1 className='title'>{title}</h1> : false}
 
                     {subTitle ? <p className='sub-title'>{subTitle}</p> : false}

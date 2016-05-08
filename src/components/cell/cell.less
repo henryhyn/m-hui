@@ -18,6 +18,27 @@
   }
 }
 
+.hui-cells-access {
+  .hui-cell:not(.no-access) {
+    // 在cell_access和其它类型的cell混着用的场景下，其它cell要加no_access，避免有点击态
+    .setTapColor;
+    &:active {
+      background-color: #ECECEC;
+    }
+  }
+  a.hui-cell {
+    color: inherit;
+  }
+  .hui-cell-ft {
+    &:after {
+      content: " ";
+      .setArrow_Wap(right, 6px, #C8C8CD, 2px);
+      top: -1px;
+      margin-left: .3em;
+    }
+  }
+}
+
 .hui-cells-title {
   margin-top: .77em; // 15px - 行高
   margin-bottom: .3em; // 8px - 行高
@@ -68,26 +89,5 @@
   .hui-cell-ft {
     text-align: right;
     color: @globalTextColor;
-  }
-}
-
-.hui-cells-access {
-  .hui-cell:not(.no_access) {
-    // 在cell_access和其它类型的cell混着用的场景下，其它cell要加no_access，避免有点击态
-    .setTapColor;
-    &:active {
-      background-color: #ECECEC;
-    }
-  }
-  a.hui-cell {
-    color: inherit;
-  }
-  .hui-cell-ft {
-    &:after {
-      content: " ";
-      .setArrow_Wap(right, 6px, #C8C8CD, 2px);
-      top: -1px;
-      margin-left: .3em;
-    }
   }
 }

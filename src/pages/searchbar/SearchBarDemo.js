@@ -50,7 +50,7 @@ class SearchBarDemo extends Component {
 
     render() {
         return (
-            <Page className="searchbar" title="SearchBar">
+            <Page title="SearchBar">
                 <SearchBar
                     onChange={this.handleChange.bind(this)}
                     />

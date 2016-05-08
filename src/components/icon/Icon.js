@@ -17,7 +17,8 @@ class Icon extends Component {
         const { className, value, size } = this.props;
         const cls = classNames({
             ['hui-icon-' + value]: true,
-            'hui-icon-msg': size === 'large'
+            'hui-icon-medium': size === 'medium',
+            'hui-icon-large': size === 'large'
         }, className);
 
         if (value === 'loading') {

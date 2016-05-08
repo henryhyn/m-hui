@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import {
     Page,
-    ButtonArea,
-    Button,
     Cells,
     CellsTitle,
     CellsTips,
@@ -55,7 +53,7 @@ class FormDemo extends Component {
 
     render() {
         return (
-            <Page className="cell" title="Cell">
+            <Page title="Cell">
                 <CellsTitle>单选列表项</CellsTitle>
                 <Form radio>
                     <FormCell radio>
@@ -139,11 +137,6 @@ class FormDemo extends Component {
                         </CellFooter>
                     </FormCell>
                 </Form>
-
-                <ButtonArea>
-                    <Button>确定</Button>
-                    <Button type="default">取消</Button>
-                </ButtonArea>
 
                 <CellsTitle>上传</CellsTitle>
                 <Form>

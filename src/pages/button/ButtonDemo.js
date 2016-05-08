@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import { Page, Button } from '../../index';
+import { Page, Button, ButtonArea } from '../../index';
 
 class ButtonDemo extends Component {
     constructor(props) {
@@ -18,13 +18,13 @@ class ButtonDemo extends Component {
                 <Button type='default'>按钮</Button>
                 <Button type='default' disabled>按钮</Button>
 
-                <div className='hui-minipage'>
+                <ButtonArea>
                     <Button plain>按钮</Button>
                     <Button plain type='default'>按钮</Button>
 
                     <Button size='small'>按钮</Button>
                     <Button type='default' size='small'>按钮</Button>
-                </div>
+                </ButtonArea>
             </Page>
         );
     }

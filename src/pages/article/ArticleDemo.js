@@ -10,7 +10,7 @@ class ArticleDemo extends Component {
 
     render() {
         return (
-            <Page className="article" title="Article" spacing>
+            <Page title="Article" spacing>
                 <Article>
                     <h1>大标题</h1>
                     <section>

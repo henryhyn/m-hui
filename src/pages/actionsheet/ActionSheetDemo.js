@@ -27,7 +27,7 @@ class ActionSheetDemo extends Component {
 
     render() {
         return (
-            <Page className="actionsheet" title="ActionSheet" spacing>
+            <Page title="ActionSheet" spacing>
                 <Button onClick={this.show.bind(this)}>ActionSheet</Button>
                 <ActionSheet menus={this.state.menus} actions={this.state.actions} show={this.state.show}
                              onRequestClose={this.hide.bind(this)}/>

@@ -53,7 +53,7 @@ class DialogDemo extends Component {
 
     render() {
         return (
-            <Page className="dialog" title="Dialog" spacing>
+            <Page title="Dialog" spacing>
                 <Button type="warn" onClick={this.showAlert.bind(this)}>警告</Button>
                 <Button type="primary" onClick={this.showConfirm.bind(this)}>确认</Button>
 

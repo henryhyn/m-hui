@@ -1,15 +1,5 @@
 @import "../../less/base/fn";
 
-@huiBtnDefaultGap: 15px;
-@huiBtnHeight: 42px;
-@huiBtnMiniHeight: 1.9;
-@huiBtnFontSize: 18px;
-@huiBtnFontColor: #FFFFFF;
-@huiBtnDisabledFontColor: rgba(255, 255, 255, .6);
-@huiBtnActiveFontColor: rgba(255, 255, 255, .4);
-@huiBtnMiniFontSize: 14px;
-@huiBtnBorderRadius: 5px;
-
 button.hui-btn {
   border-width: 0;
   width: 100%;
@@ -65,22 +55,6 @@ button.hui-btn {
 
 .hui-btn + .hui-btn {
   margin-top: @huiBtnDefaultGap;
-}
-
-.hui-btn-area {
-  margin: @huiCellsMarginTop @huiBtnDefaultGap .3em;
-  &.hui-btn-area-inline {
-    display: flex;
-    .hui-btn {
-      margin-top: auto;
-      margin-right: @huiBtnDefaultGap;
-      width: 100%;
-      flex: 1;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 
 @import "button_primary";

@@ -39,7 +39,7 @@ class PanelDemo extends Component {
 
     render() {
         return (
-            <Page className="panel" title="Panel">
+            <Page title="Panel">
                 <Panel access>
                     <PanelHeader>
                         图文组合列表

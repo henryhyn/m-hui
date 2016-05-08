@@ -39,7 +39,7 @@ class ProgressDemo extends Component {
 
     render() {
         return (
-            <Page className="progress" title="Progress" spacing>
+            <Page title="Progress" spacing>
                 <Progress value={this.state.value} onClick={this.pause.bind(this)}/>
                 <br/>
                 <Button onClick={this.start.bind(this)} disabled={this.state.isUploading}>上传</Button>
