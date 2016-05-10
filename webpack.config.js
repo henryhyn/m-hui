@@ -7,7 +7,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var ROOT_PATH = path.resolve(__dirname);
 var SRC_PATH = path.resolve(ROOT_PATH, 'src');
 var DIST_PATH = path.resolve(ROOT_PATH, 'dist');
-var TEM_PATH = path.resolve(ROOT_PATH, 'templates');
 
 module.exports = {
     // 入口. 让 webpack 用哪个文件作为项目的入口
@@ -79,7 +78,7 @@ module.exports = {
         new HtmlwebpackPlugin({
             title: 'HUI Mobile',
             filename: 'index.html',
-            template: path.resolve(TEM_PATH, 'index.html'),
+            template: 'index.html',
             chunks: ['commons', 'app']
         })
     ]
