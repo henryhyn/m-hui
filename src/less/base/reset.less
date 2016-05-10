@@ -5,18 +5,35 @@
   padding: 0;
 }
 
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 html, body, .container {
   height: 100%;
 }
 
 body {
   background-color: @backgroundColor;
+  line-height: 1.6;
+  font-size: 16px;
+  // 不禁止系统默认功能, 如长按图片会提示收藏
+  -webkit-touch-callout: inherit;
+  // 不允许 copy 文本, 如有特殊需求, 个别重写
+  user-select: none;
+  // 文本的平滑效果
+  -webkit-font-smoothing: antialiased;
   font-family: @sansFont;
   overflow-x: hidden;
 }
 
 .container {
   overflow: hidden;
+}
+
+a img {
+  border: 0;
 }
 
 a {
@@ -27,4 +44,24 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  appearance: button;
+  cursor: pointer;
+  outline: none;
+}
+
+textarea,
+input {
+  resize: none;
+  outline: none;
+  appearance: none;
+}
+
+li {
+  list-style: none;
 }
