@@ -1,4 +1,5 @@
-require('./less/style.less');
+import 'normalize.css';
+import './less/style.less';
 import Page from './components/page/Page';
 import ActionSheet from './components/actionsheet/ActionSheet';
 import Article from './components/article/Article';

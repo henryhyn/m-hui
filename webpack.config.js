@@ -50,6 +50,9 @@ module.exports = {
                 presets: ['react', 'es2015']
             }
         }, {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader')
+        }, {
             test: /\.less$/,
             include: SRC_PATH,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader!less-loader?sourceMap')
