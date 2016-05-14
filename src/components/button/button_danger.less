@@ -1,0 +1,27 @@
+@huiBtnDangerBg: #ff6633;
+@huiBtnDangerActiveBg: .9*@huiBtnDangerBg;
+
+@huiBtnInfoBg: rgba(255, 102, 51, 0.4);
+@huiBtnInfoActiveBg: .9*@huiBtnInfoBg;
+
+.hui-btn-danger {
+  background-color: @huiBtnDangerBg;
+  &:not(.hui-btn-disabled):visited {
+    color: @huiBtnFontColor;
+  }
+  &:not(.hui-btn-disabled):active {
+    color: @huiBtnActiveFontColor;
+    background-color: @huiBtnDangerActiveBg;
+  }
+}
+
+.hui-btn-info {
+  background-color: @huiBtnInfoBg;
+  &:not(.hui-btn-disabled):visited {
+    color: @huiBtnFontColor;
+  }
+  &:not(.hui-btn-disabled):active {
+    color: @huiBtnActiveFontColor;
+    background-color: @huiBtnInfoActiveBg;
+  }
+}

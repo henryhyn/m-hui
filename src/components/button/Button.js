@@ -24,6 +24,8 @@ class Button extends Component {
             'hui-btn-primary': type === 'primary' && !plain,
             'hui-btn-default': type === 'default' && !plain,
             'hui-btn-warn': type === 'warn',
+            'hui-btn-danger': type === 'danger',
+            'hui-btn-info': type === 'info',
 
             'hui-btn-plain-primary': type === 'primary' && plain,
             'hui-btn-plain-default': type === 'default' && plain,

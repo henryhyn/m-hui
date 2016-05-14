@@ -51,6 +51,10 @@ button.hui-btn {
     font-size: @huiBtnMiniFontSize;
     padding: 0 .75em;
   }
+
+  &.hui-btn-disabled {
+    color: @huiBtnDisabledFontColor;
+  }
 }
 
 .hui-btn + .hui-btn {
@@ -58,5 +62,6 @@ button.hui-btn {
 }
 
 @import "button_primary";
+@import "button_danger";
 @import "button_default";
 @import "button_warn";
