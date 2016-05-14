@@ -22,6 +22,14 @@ class CellDemo extends Component {
                             说明文字
                         </CellFooter>
                     </Cell>
+                    <Cell>
+                        <CellBody>
+                            标题文字
+                        </CellBody>
+                        <CellFooter>
+                            说明文字
+                        </CellFooter>
+                    </Cell>
                 </Cells>
 
                 <CellsTitle>带图标、说明的列表项</CellsTitle>
@@ -60,7 +68,7 @@ class CellDemo extends Component {
                             说明文字
                         </CellFooter>
                     </Cell>
-                    <Cell>
+                    <Cell access={false}>
                         <CellBody>
                             标题文字
                         </CellBody>
@@ -83,7 +91,7 @@ class CellDemo extends Component {
                             说明文字
                         </CellFooter>
                     </Cell>
-                    <Cell>
+                    <Cell access={false}>
                         <CellHeader>
                             <img src={iconSrc} alt="" style={{display: 'block', width: '20px', marginRight: '5px'}}/>
                         </CellHeader>
