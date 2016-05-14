@@ -46,7 +46,7 @@ class PanelDemo extends Component {
                     </PanelHeader>
                     <PanelBody>
                         <MediaBox type="appmsg" href="javascript:void(0);">
-                            <MediaBoxHeader>{appMsgIcon}</MediaBoxHeader>
+                            <MediaBoxHeader large>{appMsgIcon}</MediaBoxHeader>
                             <MediaBoxBody>
                                 <MediaBoxTitle>标题一</MediaBoxTitle>
                                 <MediaBoxDescription>
@@ -55,7 +55,7 @@ class PanelDemo extends Component {
                             </MediaBoxBody>
                         </MediaBox>
                         <MediaBox type="appmsg" href="javascript:void(0);">
-                            <MediaBoxHeader>{appMsgIcon}</MediaBoxHeader>
+                            <MediaBoxHeader large>{appMsgIcon}</MediaBoxHeader>
                             <MediaBoxBody>
                                 <MediaBoxTitle>标题二</MediaBoxTitle>
                                 <MediaBoxDescription>

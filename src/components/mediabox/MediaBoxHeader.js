@@ -12,9 +12,12 @@ class MediaBoxHeader extends Component {
     }
 
     render() {
-        const { className, children } = this.props;
+        const { className, small, medium, large, children } = this.props;
         const cls = classNames({
-            'hui-media-hd': true
+            'hui-media-hd': true,
+            'hui-media-sm': small,
+            'hui-media-md': medium,
+            'hui-media-lg': large
         }, className);
 
         let childrenWithProps = React.Children.map(children, child => {
@@ -31,8 +34,16 @@ class MediaBoxHeader extends Component {
     }
 }
 
-MediaBoxHeader.propTypes = {};
+MediaBoxHeader.propTypes = {
+    small: PropTypes.bool,
+    medium: PropTypes.bool,
+    large: PropTypes.bool
+};
 
-MediaBoxHeader.defaultProps = {};
+MediaBoxHeader.defaultProps = {
+    small: true,
+    medium: false,
+    large: false
+};
 
 export default MediaBoxHeader;
