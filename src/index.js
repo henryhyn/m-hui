@@ -19,6 +19,7 @@ import Form from './components/form/Form';
 import FormCell from './components/form/FormCell';
 import Input from './components/form/Input';
 import Radio from './components/form/Radio';
+import RadioBox from './components/form/RadioBox';
 import Select from './components/form/Select';
 import Switch from './components/form/Switch';
 import TextArea from './components/form/TextArea';
@@ -77,6 +78,7 @@ export {
     , FormCell
     , Input
     , Radio
+    , RadioBox
     , Select
     , Switch
     , TextArea
