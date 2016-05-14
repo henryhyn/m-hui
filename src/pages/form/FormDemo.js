@@ -19,7 +19,8 @@ import {
     Radio,
     Checkbox,
     Select,
-    Uploader
+    Uploader,
+    Hex
 } from '../../index';
 import vcodeSrc from './vcode.jpg';
 import avatarSrc from './avatar.jpg';
@@ -28,6 +29,7 @@ class FormDemo extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            open: true,
             demoFiles: [
                 {
                     url: avatarSrc,
@@ -59,7 +61,7 @@ class FormDemo extends Component {
                     <FormCell radio>
                         <CellBody>标题文字</CellBody>
                         <CellFooter>
-                            <Radio name="radio1" value="1" defaultChecked/>
+                            <Radio name="radio1" value="1"/>
                         </CellFooter>
                     </FormCell>
                     <FormCell radio>
@@ -80,7 +82,7 @@ class FormDemo extends Component {
                     </FormCell>
                     <FormCell checkbox>
                         <CellHeader>
-                            <Checkbox name="checkbox2" value="2" defaultChecked/>
+                            <Checkbox name="checkbox2" value="2"/>
                         </CellHeader>
                         <CellBody>标题文字</CellBody>
                     </FormCell>
@@ -91,7 +93,7 @@ class FormDemo extends Component {
                     <FormCell switch>
                         <CellBody>标题文字</CellBody>
                         <CellFooter>
-                            <Switch/>
+                            <Switch checked={this.state.open} onChange={Hex.handleChange.bind(this, 'open')}/>
                         </CellFooter>
                     </FormCell>
                 </Form>

@@ -55,6 +55,7 @@ import TabBarLabel from './components/tab/TabBarLabel';
 import TabBody from './components/tab/TabBody';
 import TabBodyItem from './components/tab/TabBodyItem';
 import Toast from './components/toast/Toast';
+import Hex from './components/utils/index';
 
 export {
     Page
@@ -112,4 +113,5 @@ export {
     , TabBody
     , TabBodyItem
     , Toast
+    , Hex
 };
