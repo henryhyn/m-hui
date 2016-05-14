@@ -21,6 +21,7 @@ class MediaBoxInfo extends Component {
     render() {
         const { className, data, children } = this.props;
         const cls = classNames({
+            'list-inline': true,
             'hui-media-info': true
         }, className);
 

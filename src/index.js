@@ -1,4 +1,5 @@
-require('./less/style.less');
+import 'normalize.css';
+import './less/style.less';
 import Page from './components/page/Page';
 import ActionSheet from './components/actionsheet/ActionSheet';
 import Article from './components/article/Article';
@@ -18,6 +19,7 @@ import Form from './components/form/Form';
 import FormCell from './components/form/FormCell';
 import Input from './components/form/Input';
 import Radio from './components/form/Radio';
+import RadioBox from './components/form/RadioBox';
 import Select from './components/form/Select';
 import Switch from './components/form/Switch';
 import TextArea from './components/form/TextArea';
@@ -54,6 +56,7 @@ import TabBarLabel from './components/tab/TabBarLabel';
 import TabBody from './components/tab/TabBody';
 import TabBodyItem from './components/tab/TabBodyItem';
 import Toast from './components/toast/Toast';
+import Hex from './components/utils/index';
 
 export {
     Page
@@ -75,6 +78,7 @@ export {
     , FormCell
     , Input
     , Radio
+    , RadioBox
     , Select
     , Switch
     , TextArea
@@ -111,4 +115,5 @@ export {
     , TabBody
     , TabBodyItem
     , Toast
+    , Hex
 };

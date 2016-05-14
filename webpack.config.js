@@ -7,7 +7,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var ROOT_PATH = path.resolve(__dirname);
 var SRC_PATH = path.resolve(ROOT_PATH, 'src');
 var DIST_PATH = path.resolve(ROOT_PATH, 'dist');
-var TEM_PATH = path.resolve(ROOT_PATH, 'templates');
+var TEMP_PATH = path.resolve(ROOT_PATH, 'templates');
 
 module.exports = {
     // 入口. 让 webpack 用哪个文件作为项目的入口
@@ -51,6 +51,9 @@ module.exports = {
                 presets: ['react', 'es2015']
             }
         }, {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader')
+        }, {
             test: /\.less$/,
             include: SRC_PATH,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader!less-loader?sourceMap')
@@ -79,7 +82,7 @@ module.exports = {
         new HtmlwebpackPlugin({
             title: 'HUI Mobile',
             filename: 'index.html',
-            template: path.resolve(TEM_PATH, 'index.html'),
+            template: path.resolve(TEMP_PATH, 'index.html'),
             chunks: ['commons', 'app']
         })
     ]

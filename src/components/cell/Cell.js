@@ -13,10 +13,11 @@ class Cell extends Component {
     }
 
     render() {
-        const { className, children } = this.props;
+        const { className, access, children } = this.props;
         const Tag = this.props.href ? 'a' : this.props.htmlFor ? 'label' : 'div';
         const cls = classNames({
             'hui-cell': true,
+            'no-access': !access,
             'hui-check-label': this.props.htmlFor,
             'hui-cell-switch': this.props.switch,
             'hui-cells-radio': this.props.radio,
@@ -29,8 +30,12 @@ class Cell extends Component {
     }
 }
 
-Cell.propTypes = {};
+Cell.propTypes = {
+    access: PropTypes.bool
+};
 
-Cell.defaultProps = {};
+Cell.defaultProps = {
+    access: true
+};
 
 export default Cell;

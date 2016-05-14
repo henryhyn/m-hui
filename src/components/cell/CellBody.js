@@ -15,8 +15,7 @@ class CellBody extends Component {
     render() {
         const { className, children } = this.props;
         const cls = classNames({
-            'hui-cell-bd': true,
-            'hui-cell-primary': true
+            'hui-cell-bd': true
         }, className);
 
         return (

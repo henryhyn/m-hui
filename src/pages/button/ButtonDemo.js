@@ -15,6 +15,10 @@ class ButtonDemo extends Component {
                 <Button disabled>按钮</Button>
                 <Button type='warn'>按钮</Button>
                 <Button type='warn' disabled>按钮</Button>
+                <Button type='danger'>按钮</Button>
+                <Button type='danger' disabled>按钮</Button>
+                <Button type='info'>按钮</Button>
+                <Button type='info' disabled>按钮</Button>
                 <Button type='default'>按钮</Button>
                 <Button type='default' disabled>按钮</Button>
 
