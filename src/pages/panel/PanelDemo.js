@@ -56,6 +56,11 @@ class PanelDemo extends Component {
                                 <MediaBoxDescription>
                                     由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                                 </MediaBoxDescription>
+                                <MediaBoxInfo>
+                                    <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
+                                    <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
+                                    <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>
+                                </MediaBoxInfo>
                             </MediaBoxBody>
                         </MediaBox>
                         <MediaBox type="appmsg" href="javascript:void(0);">
@@ -68,6 +73,11 @@ class PanelDemo extends Component {
                                 <MediaBoxDescription>
                                     由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                                 </MediaBoxDescription>
+                                <MediaBoxInfo>
+                                    <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
+                                    <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
+                                    <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>
+                                </MediaBoxInfo>
                             </MediaBoxBody>
                         </MediaBox>
                     </PanelBody>
