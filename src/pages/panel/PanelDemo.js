@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
+import LazyLoad from 'react-lazy-load';
 import {
     Page,
     Panel,
@@ -46,7 +47,10 @@ class PanelDemo extends Component {
                     </PanelHeader>
                     <PanelBody>
                         <MediaBox type="appmsg" href="javascript:void(0);">
-                            <MediaBoxHeader large>{appMsgIcon}</MediaBoxHeader>
+                            <LazyLoad className="hui-media-hd hui-media-lg">
+                                <img className="hui-media-appmsg-thumb"
+                                     src="http://7xqj76.com1.z0.glb.clouddn.com/Fsci1DHKYB1Ag8h8BAddMnBkwLDz?imageView2/1/w/120/h/90/q/100"/>
+                            </LazyLoad>
                             <MediaBoxBody>
                                 <MediaBoxTitle>标题一</MediaBoxTitle>
                                 <MediaBoxDescription>
@@ -55,7 +59,10 @@ class PanelDemo extends Component {
                             </MediaBoxBody>
                         </MediaBox>
                         <MediaBox type="appmsg" href="javascript:void(0);">
-                            <MediaBoxHeader large>{appMsgIcon}</MediaBoxHeader>
+                            <LazyLoad className="hui-media-hd hui-media-lg">
+                                <img className="hui-media-appmsg-thumb"
+                                     src="http://7xqj76.com1.z0.glb.clouddn.com/Fsci1DHKYB1Ag8h8BAddMnBkwLDz?imageView2/1/w/120/h/90/q/100"/>
+                            </LazyLoad>
                             <MediaBoxBody>
                                 <MediaBoxTitle>标题二</MediaBoxTitle>
                                 <MediaBoxDescription>
