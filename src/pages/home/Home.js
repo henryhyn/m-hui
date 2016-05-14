@@ -32,6 +32,14 @@ class Home extends Component {
                 label: 'Button',
                 href: '#button'
             }, {
+                icon: <Icon value='success-no-circle' size='medium'/>,
+                label: 'Toast',
+                href: '#toast'
+            }, {
+                icon: <img src={IconDialog}/>,
+                label: 'Dialog',
+                href: '#dialog'
+            }, {
                 icon: <img src={IconCell}/>,
                 label: 'Cell',
                 href: '#cell'
@@ -40,13 +48,21 @@ class Home extends Component {
                 label: 'Form',
                 href: '#form'
             }, {
-                icon: <Icon value='success-no-circle' size='medium'/>,
-                label: 'Toast',
-                href: '#toast'
+                icon: <img src={IconPanel}/>,
+                label: 'Panel',
+                href: '#panel'
             }, {
-                icon: <img src={IconDialog}/>,
-                label: 'Dialog',
-                href: '#dialog'
+                icon: <img src={IconArticle}/>,
+                label: 'Article',
+                href: '#article'
+            }, {
+                icon: <img src={IconTab}/>,
+                label: 'TabBar',
+                href: '#tabbar'
+            }, {
+                icon: <img src={IconTab}/>,
+                label: 'NavBar',
+                href: '#navbar'
             }, {
                 icon: <img src={IconProgress}/>,
                 label: 'Progress',
@@ -56,10 +72,6 @@ class Home extends Component {
                 label: 'Msg',
                 href: '#msg'
             }, {
-                icon: <img src={IconArticle}/>,
-                label: 'Article',
-                href: '#article'
-            }, {
                 icon: <img src={IconActionSheet}/>,
                 label: 'ActionSheet',
                 href: '#actionsheet'
@@ -67,18 +79,6 @@ class Home extends Component {
                 icon: <Icon value='waiting-circle' size='medium'/>,
                 label: 'Icons',
                 href: '#icons'
-            }, {
-                icon: <img src={IconPanel}/>,
-                label: 'Panel',
-                href: '#panel'
-            }, {
-                icon: <img src={IconTab}/>,
-                label: 'TabBar',
-                href: '#tabbar'
-            }, {
-                icon: <img src={IconTab}/>,
-                label: 'NavBar',
-                href: '#navbar'
             }, {
                 icon: <Icon value='search' size='medium'/>,
                 label: 'SearchBar',
