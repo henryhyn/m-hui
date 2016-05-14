@@ -14,8 +14,7 @@ class MediaBoxInfoMeta extends Component {
     render() {
         const { className, extra, children } = this.props;
         const cls = classNames({
-            'hui-media-info-meta': true,
-            'hui-media-info-meta-extra': extra
+            'pull-right': extra
         }, className);
 
         return (
