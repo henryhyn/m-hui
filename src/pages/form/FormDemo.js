@@ -9,6 +9,8 @@ import {
     CellHeader,
     CellBody,
     CellFooter,
+    Button,
+    ButtonArea,
     Form,
     FormCell,
     Icon,
@@ -90,6 +92,7 @@ class FormDemo extends Component {
                     </FormCell>
                 </Form>
 
+                <CellsTitle>表单</CellsTitle>
                 <Form>
                     <FormCell>
                         <CellHeader>
@@ -99,7 +102,7 @@ class FormDemo extends Component {
                             <Input type="tel" placeholder="请输入qq号"/>
                         </CellBody>
                     </FormCell>
-                    <FormCell vcode={true}>
+                    <FormCell vcode>
                         <CellHeader>
                             <Label>验证码</Label>
                         </CellHeader>
@@ -110,15 +113,7 @@ class FormDemo extends Component {
                             <img src={vcodeSrc}/>
                         </CellFooter>
                     </FormCell>
-                    <FormCell>
-                        <CellHeader>
-                            <Label>银行卡</Label>
-                        </CellHeader>
-                        <CellBody>
-                            <Input type="number" placeholder="请输入银行卡号"/>
-                        </CellBody>
-                    </FormCell>
-                    <FormCell vcode={true} warn={true}>
+                    <FormCell vcode warn>
                         <CellHeader>
                             <Label>验证码</Label>
                         </CellHeader>
@@ -130,7 +125,47 @@ class FormDemo extends Component {
                             <img src={vcodeSrc}/>
                         </CellFooter>
                     </FormCell>
+                    <FormCell>
+                        <CellHeader>
+                            <Label>银行卡</Label>
+                        </CellHeader>
+                        <CellBody>
+                            <Input type="number" placeholder="请输入银行卡号"/>
+                        </CellBody>
+                    </FormCell>
+                    <FormCell warn>
+                        <CellHeader>
+                            <Label>银行卡</Label>
+                        </CellHeader>
+                        <CellBody>
+                            <Input type="number" placeholder="请输入银行卡号"/>
+                        </CellBody>
+                        <CellFooter>
+                            <Icon value="warn"/>
+                        </CellFooter>
+                    </FormCell>
+                    <FormCell>
+                        <CellHeader>
+                            <Label>日期</Label>
+                        </CellHeader>
+                        <CellBody>
+                            <Input type="date"/>
+                        </CellBody>
+                    </FormCell>
+                    <FormCell>
+                        <CellHeader>
+                            <Label>时间</Label>
+                        </CellHeader>
+                        <CellBody>
+                            <Input type="datetime-local"/>
+                        </CellBody>
+                    </FormCell>
                 </Form>
+                <CellsTips>底部说明文字底部说明文字</CellsTips>
+
+                <ButtonArea>
+                    <Button>按钮</Button>
+                </ButtonArea>
 
                 <CellsTitle>上传</CellsTitle>
                 <Form>
