@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import LazyLoad from 'react-lazy-load';
 import {
     Page,
     Panel,
     PanelHeader,
     PanelBody,
     PanelFooter,
+    LazyLoad,
     MediaBox,
     MediaBoxHeader,
     MediaBoxBody,

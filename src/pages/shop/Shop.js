@@ -1,10 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import LazyLoad from 'react-lazy-load';
 import {
     Page,
     Panel,
     PanelBody,
+    LazyLoad,
     MediaBox,
     MediaBoxBody,
     MediaBoxTitle,
@@ -30,6 +30,25 @@ class Shop extends Component {
     render() {
         return (
             <Page>
+                <LazyLoad className='hui-img-wrap rate56'>
+                    <img src="http://7xqj76.com1.z0.glb.clouddn.com/Fg--qJ1KdSMToDgI1ady3YjRd3ED"/>
+                </LazyLoad>
+
+                <Panel>
+                    <PanelBody>
+                        <MediaBox type="text">
+                            <MediaBoxTitle>爽辣重庆潮人火锅<Mark type='cu'/><Mark/></MediaBoxTitle>
+                            <MediaBoxInfo style={{marginTop: '5px'}}>
+                                <MediaBoxInfoMeta><Star rank={45}/></MediaBoxInfoMeta>
+                                <MediaBoxInfoMeta>¥25/人</MediaBoxInfoMeta>
+                            </MediaBoxInfo>
+                            <MediaBoxInfo style={{marginTop: '5px'}}
+                                          data={[{label: '中山公园'}, {label: '火锅'}, {label: '3.5km', extra: true}]}>
+                            </MediaBoxInfo>
+                        </MediaBox>
+                    </PanelBody>
+                </Panel>
+
                 <Panel>
                     <PanelBody>
                         <MediaBox type="small-appmsg">
