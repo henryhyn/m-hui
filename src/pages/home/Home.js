@@ -123,6 +123,10 @@ class Home extends Component {
                 icon: <img src={IconSwiper}/>,
                 label: 'Swiper',
                 href: '#swiper'
+            }, {
+                icon: <Icon value='safe-success' size='medium'/>,
+                label: 'Shop',
+                href: '#shop'
             }]
         };
     }

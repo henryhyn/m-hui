@@ -52,11 +52,11 @@ class PanelDemo extends Component {
                                      src="http://7xqj76.com1.z0.glb.clouddn.com/Fsci1DHKYB1Ag8h8BAddMnBkwLDz?imageView2/1/w/120/h/90/q/100"/>
                             </LazyLoad>
                             <MediaBoxBody>
-                                <MediaBoxTitle>标题一</MediaBoxTitle>
+                                <MediaBoxTitle style={{marginBottom: '8px'}}>标题一</MediaBoxTitle>
                                 <MediaBoxDescription>
                                     由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                                 </MediaBoxDescription>
-                                <MediaBoxInfo>
+                                <MediaBoxInfo style={{marginTop: '12px'}}>
                                     <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>
@@ -69,11 +69,11 @@ class PanelDemo extends Component {
                                      src="http://7xqj76.com1.z0.glb.clouddn.com/Fsci1DHKYB1Ag8h8BAddMnBkwLDz?imageView2/1/w/120/h/90/q/100"/>
                             </LazyLoad>
                             <MediaBoxBody>
-                                <MediaBoxTitle>标题二</MediaBoxTitle>
+                                <MediaBoxTitle style={{marginBottom: '8px'}}>标题二</MediaBoxTitle>
                                 <MediaBoxDescription>
                                     由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                                 </MediaBoxDescription>
-                                <MediaBoxInfo>
+                                <MediaBoxInfo style={{marginTop: '12px'}}>
                                     <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>

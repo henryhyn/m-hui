@@ -28,6 +28,8 @@ import Grid from './components/grid/Grid';
 import GridIcon from './components/grid/GridIcon';
 import GridLabel from './components/grid/GridLabel';
 import Grids from './components/grid/Grids';
+import Star from './components/star/Star';
+import Mark from './components/mark/Mark';
 import Icon from './components/icon/Icon';
 import Label from './components/label/Label';
 import Mask from './components/mask/Mask';
@@ -87,6 +89,8 @@ export {
     , GridIcon
     , GridLabel
     , Grids
+    , Star
+    , Mark
     , Icon
     , Label
     , Mask

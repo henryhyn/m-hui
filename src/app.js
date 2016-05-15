@@ -21,6 +21,7 @@ import Scroll from './pages/scroll/ScrollDemo';
 import SearchBar from './pages/searchbar/SearchBarDemo';
 import TabBar from './pages/tabbar/TabBarDemo';
 import Toast from './pages/toast/ToastDemo';
+import Shop from './pages/shop/Shop';
 import PageNotFound from './pages/error/PageNotFound';
 
 class App extends React.Component {
@@ -62,6 +63,7 @@ ReactDOM.render((
             <Route path="searchbar" component={SearchBar}/>
             <Route path="tabbar" component={TabBar}/>
             <Route path="toast" component={Toast}/>
+            <Route path="shop" component={Shop}/>
             <Route path="*" component={PageNotFound}/>
         </Route>
     </Router>
