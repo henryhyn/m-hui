@@ -1,4 +1,5 @@
 import './hui_icon_font.less';
+import './icon.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 

@@ -12,6 +12,16 @@ class Page extends Component {
         this.state = {};
     }
 
+    renderPageHeader(title, subTitle) {
+        return (
+            <div className='hui-page-hd'>
+                {title ? <h1 className='title'>{title}</h1> : false}
+
+                {subTitle ? <p className='sub-title'>{subTitle}</p> : false}
+            </div>
+        );
+    }
+
     render() {
         const { className, title, subTitle, spacing, children } = this.props;
         const cls = classNames({
@@ -21,11 +31,7 @@ class Page extends Component {
 
         return (
             <div className={`hui-page ${className ? className : ''}`}>
-                <div className='hui-page-hd'>
-                    {title ? <h1 className='title'>{title}</h1> : false}
-
-                    {subTitle ? <p className='sub-title'>{subTitle}</p> : false}
-                </div>
+                {title || subTitle ? this.renderPageHeader(title, subTitle) : false}
                 <div className={cls}>
                     {children}
                 </div>

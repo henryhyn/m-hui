@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import LazyLoad from 'react-lazy-load';
 import {
     Page,
     Panel,
     PanelHeader,
     PanelBody,
     PanelFooter,
+    LazyLoad,
     MediaBox,
     MediaBoxHeader,
     MediaBoxBody,
@@ -52,11 +52,11 @@ class PanelDemo extends Component {
                                      src="http://7xqj76.com1.z0.glb.clouddn.com/Fsci1DHKYB1Ag8h8BAddMnBkwLDz?imageView2/1/w/120/h/90/q/100"/>
                             </LazyLoad>
                             <MediaBoxBody>
-                                <MediaBoxTitle>标题一</MediaBoxTitle>
+                                <MediaBoxTitle style={{marginBottom: '4px'}}>标题一</MediaBoxTitle>
                                 <MediaBoxDescription>
                                     由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                                 </MediaBoxDescription>
-                                <MediaBoxInfo>
+                                <MediaBoxInfo style={{marginTop: '8px'}}>
                                     <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>
@@ -69,11 +69,11 @@ class PanelDemo extends Component {
                                      src="http://7xqj76.com1.z0.glb.clouddn.com/Fsci1DHKYB1Ag8h8BAddMnBkwLDz?imageView2/1/w/120/h/90/q/100"/>
                             </LazyLoad>
                             <MediaBoxBody>
-                                <MediaBoxTitle>标题二</MediaBoxTitle>
+                                <MediaBoxTitle style={{marginBottom: '4px'}}>标题二</MediaBoxTitle>
                                 <MediaBoxDescription>
                                     由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                                 </MediaBoxDescription>
-                                <MediaBoxInfo>
+                                <MediaBoxInfo style={{marginTop: '8px'}}>
                                     <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>
@@ -92,13 +92,13 @@ class PanelDemo extends Component {
                     </PanelHeader>
                     <PanelBody>
                         <MediaBox type="text">
-                            <MediaBoxTitle>标题一</MediaBoxTitle>
+                            <MediaBoxTitle style={{marginBottom: '4px'}}>标题一</MediaBoxTitle>
                             <MediaBoxDescription>
                                 由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                             </MediaBoxDescription>
                         </MediaBox>
                         <MediaBox type="text">
-                            <MediaBoxTitle>标题二</MediaBoxTitle>
+                            <MediaBoxTitle style={{marginBottom: '4px'}}>标题二</MediaBoxTitle>
                             <MediaBoxDescription>
                                 由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                             </MediaBoxDescription>
@@ -141,11 +141,11 @@ class PanelDemo extends Component {
                     </PanelHeader>
                     <PanelBody>
                         <MediaBox type="text">
-                            <MediaBoxTitle>标题一</MediaBoxTitle>
+                            <MediaBoxTitle style={{marginBottom: '4px'}}>标题一</MediaBoxTitle>
                             <MediaBoxDescription>
                                 由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                             </MediaBoxDescription>
-                            <MediaBoxInfo>
+                            <MediaBoxInfo style={{marginTop: '8px'}}>
                                 <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
                                 <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
                                 <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>

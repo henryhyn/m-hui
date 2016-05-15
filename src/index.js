@@ -28,6 +28,8 @@ import Grid from './components/grid/Grid';
 import GridIcon from './components/grid/GridIcon';
 import GridLabel from './components/grid/GridLabel';
 import Grids from './components/grid/Grids';
+import Star from './components/star/Star';
+import Mark from './components/mark/Mark';
 import Icon from './components/icon/Icon';
 import Label from './components/label/Label';
 import Mask from './components/mask/Mask';
@@ -56,7 +58,11 @@ import TabBarLabel from './components/tab/TabBarLabel';
 import TabBody from './components/tab/TabBody';
 import TabBodyItem from './components/tab/TabBodyItem';
 import Toast from './components/toast/Toast';
+import List from './components/list/List';
+import ListItem from './components/list/ListItem';
+import Banner from './components/banner/Banner';
 import Hex from './components/utils/index';
+import LazyLoad from './components/lazyload/index';
 
 export {
     Page
@@ -87,6 +93,8 @@ export {
     , GridIcon
     , GridLabel
     , Grids
+    , Star
+    , Mark
     , Icon
     , Label
     , Mask
@@ -115,5 +123,9 @@ export {
     , TabBody
     , TabBodyItem
     , Toast
+    , List
+    , ListItem
+    , Banner
     , Hex
+    , LazyLoad
 };

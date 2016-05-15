@@ -24,29 +24,6 @@
     }
   }
 
-  .hui-media-title {
-    margin-bottom: 8px;
-    font-weight: 400;
-    font-size: 17px;
-    .ellipsis();
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-  .hui-media-desc {
-    color: @grayColor;
-    font-size: 13px;
-    line-height: 1.2;
-    .ellipsisLn(2);
-  }
-  .hui-media-info {
-    margin-top: 12px;
-    font-size: 13px;
-    color: #CECECE;
-    line-height: 1em;
-    list-style: none;
-    overflow: hidden;
-  }
-
   &.hui-media-appmsg {
     display: flex;
     align-items: center;
@@ -92,4 +69,25 @@
     .hui-cells-access {
     }
   }
+}
+
+.hui-media-title {
+  font-weight: 400;
+  font-size: 17px;
+  .ellipsis();
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.hui-media-desc {
+  color: @grayColor;
+  font-size: 13px;
+  line-height: 1.2;
+  .ellipsisLn(3);
+}
+.hui-media-info {
+  font-size: 13px;
+  color: #CECECE;
+  line-height: 1em;
+  list-style: none;
+  overflow: hidden;
 }
