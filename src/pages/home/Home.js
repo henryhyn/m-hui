@@ -127,6 +127,10 @@ class Home extends Component {
                 icon: <Icon value='safe-success' size='medium'/>,
                 label: 'Shop',
                 href: '#shop'
+            }, {
+                icon: <Icon value='safe-success' size='medium'/>,
+                label: 'List',
+                href: '#list'
             }]
         };
     }

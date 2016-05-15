@@ -22,6 +22,7 @@ import SearchBar from './pages/searchbar/SearchBarDemo';
 import TabBar from './pages/tabbar/TabBarDemo';
 import Toast from './pages/toast/ToastDemo';
 import Shop from './pages/shop/Shop';
+import List from './pages/list/ListDemo';
 import PageNotFound from './pages/error/PageNotFound';
 
 class App extends React.Component {
@@ -64,6 +65,7 @@ ReactDOM.render((
             <Route path="tabbar" component={TabBar}/>
             <Route path="toast" component={Toast}/>
             <Route path="shop" component={Shop}/>
+            <Route path="list" component={List}/>
             <Route path="*" component={PageNotFound}/>
         </Route>
     </Router>

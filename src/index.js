@@ -58,6 +58,8 @@ import TabBarLabel from './components/tab/TabBarLabel';
 import TabBody from './components/tab/TabBody';
 import TabBodyItem from './components/tab/TabBodyItem';
 import Toast from './components/toast/Toast';
+import List from './components/list/List';
+import ListItem from './components/list/ListItem';
 import Hex from './components/utils/index';
 import LazyLoad from './components/lazyload/index';
 
@@ -120,6 +122,8 @@ export {
     , TabBody
     , TabBodyItem
     , Toast
+    , List
+    , ListItem
     , Hex
     , LazyLoad
 };
