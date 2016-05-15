@@ -12,7 +12,7 @@ class List extends Component {
         const { children } = this.props;
 
         return (
-            <ul>{children}</ul>
+            <div>{children}</div>
         );
     }
 }

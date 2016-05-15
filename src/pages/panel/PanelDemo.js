@@ -141,11 +141,11 @@ class PanelDemo extends Component {
                     </PanelHeader>
                     <PanelBody>
                         <MediaBox type="text">
-                            <MediaBoxTitle>标题一</MediaBoxTitle>
+                            <MediaBoxTitle style={{marginBottom: '8px'}}>标题一</MediaBoxTitle>
                             <MediaBoxDescription>
                                 由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
                             </MediaBoxDescription>
-                            <MediaBoxInfo>
+                            <MediaBoxInfo style={{marginTop: '12px'}}>
                                 <MediaBoxInfoMeta>文字来源</MediaBoxInfoMeta>
                                 <MediaBoxInfoMeta>时间</MediaBoxInfoMeta>
                                 <MediaBoxInfoMeta extra>其它信息</MediaBoxInfoMeta>

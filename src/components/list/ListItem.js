@@ -8,12 +8,15 @@ class ListItem extends Component {
     }
 
     render() {
+        const { children } = this.props;
         const cls = classNames({
             'hui-list-item': true
         });
 
         return (
-            <li className={cls}>ListItem</li>
+            <a className={cls}>
+                {children}
+            </a>
         );
     }
 }
