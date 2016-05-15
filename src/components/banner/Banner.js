@@ -1,8 +1,8 @@
-import './list.less';
+import './banner.less';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
-class List extends Component {
+class Banner extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -11,7 +11,7 @@ class List extends Component {
     render() {
         const { children } = this.props;
         const cls = classNames({
-            'hui-list': true
+            'hui-banner': true
         });
 
         return (
@@ -20,8 +20,8 @@ class List extends Component {
     }
 }
 
-List.propTypes = {};
+Banner.propTypes = {};
 
-List.defaultProps = {};
+Banner.defaultProps = {};
 
-export default List;
+export default Banner;

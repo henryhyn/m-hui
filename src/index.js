@@ -60,6 +60,7 @@ import TabBodyItem from './components/tab/TabBodyItem';
 import Toast from './components/toast/Toast';
 import List from './components/list/List';
 import ListItem from './components/list/ListItem';
+import Banner from './components/banner/Banner';
 import Hex from './components/utils/index';
 import LazyLoad from './components/lazyload/index';
 
@@ -124,6 +125,7 @@ export {
     , Toast
     , List
     , ListItem
+    , Banner
     , Hex
     , LazyLoad
 };

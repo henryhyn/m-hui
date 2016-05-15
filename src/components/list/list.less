@@ -1,9 +1,21 @@
 @import "../../less/base/fn";
 
+.hui-list {
+  margin-top: 10px;
+}
+
 .hui-list-item {
   background-color: @white;
   padding: 15px;
   display: block;
+
+  a& {
+    color: #000000;
+    .setTapColor;
+    &:active {
+      background-color: #ECECEC;
+    }
+  }
 }
 
 .hui-list-item + .hui-list-item {

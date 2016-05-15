@@ -1,0 +1,38 @@
+@import "../../less/base/fn";
+
+.hui-banner {
+  background-color: @foregroundColor;
+  position: relative;
+  .hui-caption {
+    .wcenter();
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    h4.hui-title {
+      display: block;
+      font-size: 27px;
+      line-height: 27px;
+      position: relative;
+      font-weight: bold;
+      padding: 4px 0;
+      &:before {
+        .setBottomLine(white);
+      }
+    }
+    p.hui-subtitle {
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: 3px;
+    }
+  }
+  .hui-text {
+    padding: 15px;
+  }
+}
