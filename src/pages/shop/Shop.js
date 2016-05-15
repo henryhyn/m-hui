@@ -94,14 +94,14 @@ class Shop extends Component {
                             </LazyLoad>
                             <MediaBoxBody>
                                 <MediaBoxTitle>爽辣重庆潮人火锅<Mark type='cu'/><Mark/></MediaBoxTitle>
-                                <MediaBoxInfo style={{marginBottom: '3px'}}>
+                                <MediaBoxInfo style={{marginBottom: '6px'}}>
                                     <MediaBoxInfoMeta><Star rank={45}/></MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta>¥25/人</MediaBoxInfoMeta>
                                 </MediaBoxInfo>
                                 <MediaBoxDescription>
-                                    由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+                                    由各种物质组成的巨型球状天体，叫做星球。
                                 </MediaBoxDescription>
-                                <MediaBoxInfo style={{marginTop: '3px'}}
+                                <MediaBoxInfo style={{marginTop: '6px'}}
                                               data={[{label: '中山公园'}, {label: '火锅'}, {label: '3.5km', extra: true}]}>
                                 </MediaBoxInfo>
                             </MediaBoxBody>
@@ -113,14 +113,14 @@ class Shop extends Component {
                             </LazyLoad>
                             <MediaBoxBody>
                                 <MediaBoxTitle>爽辣重庆潮人火锅<Mark type='cu'/><Mark/></MediaBoxTitle>
-                                <MediaBoxInfo style={{marginBottom: '3px'}}>
+                                <MediaBoxInfo style={{marginBottom: '6px'}}>
                                     <MediaBoxInfoMeta><Star rank={45}/></MediaBoxInfoMeta>
                                     <MediaBoxInfoMeta>¥25/人</MediaBoxInfoMeta>
                                 </MediaBoxInfo>
                                 <MediaBoxDescription>
-                                    由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+                                    由各种物质组成的巨型球状天体，叫做星球。
                                 </MediaBoxDescription>
-                                <MediaBoxInfo style={{marginTop: '3px'}}
+                                <MediaBoxInfo style={{marginTop: '6px'}}
                                               data={[{label: '中山公园'}, {label: '火锅'}, {label: '3.5km', extra: true}]}>
                                 </MediaBoxInfo>
                             </MediaBoxBody>
