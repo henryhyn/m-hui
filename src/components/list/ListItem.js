@@ -14,7 +14,7 @@ class ListItem extends Component {
         });
 
         return (
-            <a className={cls}>
+            <a className={cls} {...this.props}>
                 {children}
             </a>
         );
