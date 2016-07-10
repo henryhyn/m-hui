@@ -67,12 +67,6 @@ module.exports = {
     },
     postcss: [autoprefixer],
     plugins: [
-        // 当项目中引用次数超过 2 次的包自动打入 commons.js 中, 可自行根据需要进行调整优化
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'commons',
-            filename: 'commons.js',
-            minChunks: 2
-        }),
         new ExtractTextPlugin('[name].css'),
         // 创建了一个 HtmlWebpackPlugin 实例, 生成一个页面, 可以创建多个页面
         // 参数 title --- 页面标题
